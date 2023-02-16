@@ -8,8 +8,8 @@ import FirstNavbar from './Pages/Navbar';
 function App() {
    return (
       <div className='App'>
-          <FirstNavbar></FirstNavbar>
-         <Formulario></Formulario>
+         <FirstNavbar></FirstNavbar>
+          <Formulario></Formulario> 
 
       </div>
    );
