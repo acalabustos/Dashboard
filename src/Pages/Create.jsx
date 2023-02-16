@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import '../Style/Create.css'
+
 function Form() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -64,22 +65,15 @@ function Form() {
         Precio
         <input type='text' value={price} onChange={handlePriceChange} />
       </label>
-    </form>
 
-
-
-  function Button () {
-    return (
       <div className="d-grid gap-2">
-        <Button variant="primary" size="lg">
-          Block level button
-        </Button>
-      </div>
-    );
-  }
-
-        
+      <Button variant="primary" size="lg">
+        Block level button
+      </Button>
+    </div>
+    </form>
 
     )
 }
-export default Form, Button;
+
+export default Form;
