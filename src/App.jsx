@@ -1,14 +1,13 @@
-import { Navbar } from 'react-bootstrap'
-import './App.css'
-import './Pages/Create'
+import './App.css';
+import '../src/components/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FormUpload from './Pages/Form';
-import FirstNavbar from './Pages/Navbar';
+import FormUpload from './components/Form';
+import FirstNav from '../src/components/Navbar';
 
 function App() {
    return (
       <div className='App'>
-         <FirstNavbar></FirstNavbar>
+         <FirstNav></FirstNav>
           <FormUpload></FormUpload>
 
       </div>

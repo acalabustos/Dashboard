@@ -4,12 +4,14 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import  Img from '../Img/logo proyecto.png';
+import "../Style/Navbar.css";
 
-function NavScrollExample() {
+function FirstNav() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand ><img src={Img} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -48,4 +50,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default FirstNav;
