@@ -29,7 +29,7 @@ function FormUpload() {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Label>Imagen:</Form.Label>
+        <Form.Label>Image:</Form.Label>
         <Form.Control
           type="file"
           accept="image/*"
@@ -41,8 +41,8 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className='mb-3'>
-        <Form.Label htmlFor="textInput">Title:</Form.Label>
-        <Form.Control id="textInput" placeholder="Add title" />
+        <Form.Label htmlFor="textInput">Product</Form.Label>
+        <Form.Control id="textInput" placeholder="Add product" />
       </Form.Group>
 
       <Form.Group className="mb-3">
@@ -78,7 +78,7 @@ function FormUpload() {
 
 
       <Button variant="primary" type="submit">
-        Enviar
+        Show Product
       </Button>
     </Form>
   );

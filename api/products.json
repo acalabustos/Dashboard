@@ -1,0 +1,27 @@
+
+{"products": [
+    {
+    "id": "" ,
+    "name":"camiseta",
+    "header":"",
+    "description":"",
+    "price": ""
+    },
+    {
+        "id": "" ,
+        "name":"pantalón",
+        "header":"",
+        "description":"",
+        "price": ""
+        },
+        {
+            "id": "" ,
+            "name":"chaquetón",
+            "header":"",
+            "description":"",
+            "price": ""
+            }
+
+]
+
+}
