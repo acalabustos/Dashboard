@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { productsHandler } from '../handlers/productsHandler';
 import { Form, Button } from 'react-bootstrap';
 
 function FormUpload() {
   const [previewImage, setPreviewImage] = useState(null);
-  const [title, setTitle] = useState('');
+  const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
   const [brand, setBrand] = useState('');
@@ -22,8 +23,8 @@ function FormUpload() {
       imageReader.readAsDataURL(selectedImage);
     }
   };
-  const handleTitleChange = (event) => {
-    setTitle(event.target.value);
+  const handleNameChange = (event) => {
+    setName(event.target.value);
   };
   const handleDescriptionChange = (event) => {
     setDescription(event.target.value);
@@ -34,14 +35,16 @@ function FormUpload() {
   const handleBrandChange = (event) => {
     setBrand(event.target.value);
   };
-  const handleConditionChange = (event) => {
+ /*  const handleConditionChange = (event) => {
     setCondition(event.target.value);
-  };
+  }; */
   const handlePriceChange = (event) => {
     setPrice(event.target.value);
   };
   const handleSubmit = (event) => {
     event.prevetDefault();
+    let newProduct = {name, description, category, brand, condition, price};
+        productsHandler.addProduct(newProduct);
   }
 
 
@@ -60,16 +63,17 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className='mb-3'>
-        <Form.Label htmlFor="textInput">Product:</Form.Label>
+        <Form.Label htmlFor="textInput">Nombre:</Form.Label>
         <Form.Control 
         id="textInput"  
-        value={title} 
-        onChange={handleTitleChange} 
+        value={name} 
+        onChange={handleNameChange} 
         placeholder="Add Product" />
+
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Description:</Form.Label>
+        <Form.Label htmlFor="textInput">Email:</Form.Label>
         <Form.Control 
         id="textInput" 
         value={description} 
@@ -78,7 +82,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Category:</Form.Label>
+        <Form.Label htmlFor="textInput">Pregunta:</Form.Label>
         <Form.Control 
         id="textInput" 
         value={category} 
@@ -95,7 +99,7 @@ function FormUpload() {
         placeholder="Add brand" />
       </Form.Group>
 
-      <Form.Group className="mb-3">
+  {/*     <Form.Group className="mb-3">
         <Form.Label htmlFor="select">Condition:</Form.Label>
         <Form.Select 
         id="select"
@@ -108,7 +112,7 @@ function FormUpload() {
           <option value={"good"}>Good</option>
           <option value={"satisfactory"}>Satisfactory</option>
         </Form.Select>
-      </Form.Group>
+      </Form.Group> */}
 
       <Form.Group className="mb-3">
         <Form.Label htmlFor="numberInput">Price:</Form.Label>
@@ -125,6 +129,7 @@ function FormUpload() {
         Send
       </Button>
     </Form>
+  
   );
 }
 

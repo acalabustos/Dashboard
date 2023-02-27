@@ -19,14 +19,14 @@ export const productsHandler = {
         }
 
         return productService.submitProduct(newProductStructure);   
-    }
+    },
 
-    /*loadProducts(){
+    loadProducts(){
         return productService.getProducts();
     },
 
-    loadProducts(id){
+    loadProduct(id){
         return productService.getProducts(id);
 
-}*/
+}
 }  

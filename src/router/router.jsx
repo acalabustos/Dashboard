@@ -1,13 +1,14 @@
 
 import { createBrowserRouter } from "react-router-dom";
 import Root from "./Root";
-import Dashboard from "../Pages/ProductList";
+import ProductList from "../Pages/ProductList";
+import Home from "../Pages/Home";
+/* import EditProduct from "../Pages/EditProduct"; */
 import ProductInfo from "../components/ProductInfo";
-import Home from "../pages/Home";
-import EditProduct from "../pages/EditProduct";
 
-import { productHandler } from "../handlers/productHandler";
-import CreateProduct from "../pages/CreateProduct";
+import {productsHandler} from "../handlers/productsHandler";        
+import Form from "../components/Form";
+
 
 export const router = createBrowserRouter([
     {
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "products",
-                element: <Dashboard />,
+                element: <ProductList/>,
                 loader: fetchProducts,
             },
             {
@@ -26,7 +27,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "newProduct",
-                element: <CreateProduct />,
+                element: <Form />,
             },
             {
                 path: "homepage",
@@ -43,11 +44,11 @@ export const router = createBrowserRouter([
 ]);
 
 async function fetchProducts() {
-    const products = await productHandler.loadProducts();
+    const products = await productsHandler.loadProducts();
     return { products };
 }
 
 async function fetchProduct({ params }) {
-    const product = await productHandler.loadProduct(params.id);
+    const product = await productsHandler.loadProduct(params.id);
     return { product };
 }
