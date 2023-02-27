@@ -60,12 +60,12 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className='mb-3'>
-        <Form.Label htmlFor="textInput">Title:</Form.Label>
+        <Form.Label htmlFor="textInput">Product:</Form.Label>
         <Form.Control 
         id="textInput"  
         value={title} 
         onChange={handleTitleChange} 
-        placeholder="Add title" />
+        placeholder="Add Product" />
       </Form.Group>
 
       <Form.Group className="mb-3">
@@ -122,7 +122,7 @@ function FormUpload() {
 
 
       <Button variant="primary" type="submit">
-        Enviar
+        Send
       </Button>
     </Form>
   );

@@ -1,3 +1,5 @@
+
+
 export const printers = {
     printProducts(arrayProducts){
        let templateHTML = "";

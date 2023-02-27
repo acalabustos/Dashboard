@@ -3,25 +3,31 @@
     {
     "id": "" ,
     "name":"camiseta",
-    "header":"",
     "description":"",
+    "category":"",
+    "brand":"",
+    "condicition":"",
     "price": ""
     },
     {
         "id": "" ,
-        "name":"pantalón",
-        "header":"",
+        "name":"camiseta",
         "description":"",
+        "category":"",
+        "brand":"",
+        "condicition":"",
         "price": ""
         },
         {
             "id": "" ,
-            "name":"chaquetón",
-            "header":"",
+            "name":"camiseta",
             "description":"",
+            "category":"",
+            "brand":"",
+            "condicition":"",
             "price": ""
             }
-
+      
 ]
 
 }

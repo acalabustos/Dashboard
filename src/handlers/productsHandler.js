@@ -9,15 +9,16 @@ export const productsHandler = {
         }
 
         let newProductStructure = {
-            "name": newProduct,
-            "id": "",
-            "header": newHeader,
-            "description": newDescription ,
-            "price": newPrice
+            "id": "" ,
+            "name": newProduct.name,
+            "description": newProduct.description,
+            "category": newProduct.category,
+            "brand":newProduct.brand,
+            "condicition":newProduct.condition,
+            "price": newProduct.price,
         }
 
-        productService.submitProduct(product);
-        return product;
+        return productService.submitProduct(newProductStructure);   
     }
 
     /*loadProducts(){

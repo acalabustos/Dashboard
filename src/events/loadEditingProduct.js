@@ -1,4 +1,4 @@
-import {productService} from "./services/productsService.js"
+/*import {productService} from "./services/productsService.js"
 import { printers } from "../dom/printers.js";
 import { productsHandler } from "../handlers/productsHandler.js";  
 
@@ -11,4 +11,4 @@ button.addEventListener("click", async () => {
       mainEl.innerHTML = templateHTML;
   
    return templateHTML;
-});
+});*/

@@ -7,11 +7,15 @@ const apiClient = axios.create({
     }
 })
 
-export const productsService = {
-    async getProducts() {
+export const productService = {
+   /*  async getProducts() {
       let response = await apiClient.get("/products");
       console.log(response.data);
       return response.data;
   
-    },
+    }, */
+
+    async submitProduct(newProduct){
+        await apiClient.post("/product", newProduct.name)
+    }
 }
