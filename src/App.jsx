@@ -8,8 +8,7 @@ import FirstNav from '../src/components/Navbar';
 function App() {
    return (
       <div className='App'>
-          <FirstNav></FirstNav>
-          {/* <FormUpload></FormUpload> */}
+         <LayoutPublic/>
 
       </div>
    );

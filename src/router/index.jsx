@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
+import LayoutPublic from "../layout/LayoutPublic";
+
 import Home from '../pages/Home';
 import CreateProduct from '../pages/CreateProduct';
 import DescriptionProduct from '../pages/DescriptionProduct';
@@ -9,6 +11,7 @@ import NotFound from "../pages/NotFound";
 export const router = createBrowserRouter([
     {
         path: '/',
+        element: <LayoutPublic />,
         errorElement: <NotFound />, 
         children: [
             {
