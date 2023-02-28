@@ -10,11 +10,11 @@ function Home() {
                 <div className="prueba">
                     <Row>
 
-                        <h1>Bienvenido a mi sitio web</h1>
-                        <p>Este es el texto principal de la página de inicio.</p>
+                        <h1>Buy and sell second-hand goods</h1>
+                        <p>Here I am! Just look for me</p>
                         <Carousel></Carousel>
 
-                        <Accordion defaultActiveKey="0">
+                        <Accordion defaultActiveKey="3">
                     
                         </Accordion>
 

@@ -1,6 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
 
-function BasicExample() {
+function Tip() {
   return (
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
@@ -32,4 +32,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Tip;

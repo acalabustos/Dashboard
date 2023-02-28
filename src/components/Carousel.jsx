@@ -1,7 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Img from '../Img/logo proyecto.png';
 
-function NoTransitionExample() {
+
+function sequenceImg() {
   return (
     <Carousel slide={false}>
       <Carousel.Item>
@@ -18,7 +19,7 @@ function NoTransitionExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          //src={eco1}
           alt="Second slide"
         />
 
@@ -45,4 +46,4 @@ function NoTransitionExample() {
   );
 }
 
-export default NoTransitionExample;
+export default sequenceImg;

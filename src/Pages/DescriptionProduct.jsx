@@ -1,26 +1,20 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import Card from 'react-bootstrap/Card';
 
-function DescriptionProduct() {
+function CardProduct() {
   return (
-    <div>
-      <Container fluid>
-        <Row>
-          <Col md={6}>
-            <h1>Esto tambien es una prueba</h1>
-            <p>Este es el texto principal de la página de inicio.</p>
-          </Col>
-          <Col md={6}>
-            <img
-              src="https://via.placeholder.com/400x300"
-              alt="Imagen de ejemplo"
-              className="img-fluid"
-            />
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <Card style={{ width: '28rem' }}>
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Card.Link href="#">Favorito</Card.Link>
+        <Card.Link href="#">Compartir</Card.Link>
+      </Card.Body>
+    </Card>
   );
 }
 
-export default DescriptionProduct;
+export default CardProduct;
