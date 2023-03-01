@@ -48,14 +48,14 @@ function FormUpload() {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Label>Imagen:</Form.Label>
+        <Form.Label>Image:</Form.Label>
         <Form.Control
           type="file"
           accept="image/*"
           onChange={(e) => handleImageChange(e)}
         />
         {previewImage && (
-          <img src={previewImage} alt="Vista previa de la imagen" />
+          <img src={previewImage} alt="View image" />
         )}
       </Form.Group>
 
