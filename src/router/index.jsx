@@ -1,53 +1,43 @@
-
 import { createBrowserRouter } from "react-router-dom";
-import Root from "./Root";
-import Dashboard from "../Pages/ProductList";
-import ProductInfo from "../components/ProductInfo";
-import Home from "../pages/Home";
-import EditProduct from "../pages/EditProduct";
 
-import { productHandler } from "../handlers/productHandler";
-import CreateProduct from "../pages/CreateProduct";
+import LayoutPublic from "../layout/LayoutPublic";
+
+import Home from '../pages/Home';
+import CreateProduct from '../pages/CreateProduct';
+import DescriptionProduct from '../pages/DescriptionProduct';
+import ProductList from '../pages/ProductList';
+import NotFound from "../pages/NotFound";
 
 export const router = createBrowserRouter([
     {
-        path: "/",
-        element: <Root />,
+        path: '/',
+        element: <LayoutPublic />,
+        errorElement: <NotFound />, 
         children: [
             {
-                path: "/products",
-                element: <Dashboard />,
-                loader: fetchProducts,
+                errorElement: <NotFound />,
+                children: [
+                    {
+                        index: true,
+                        element: <Home />, 
+                    },
+                    {
+                        path: '/CreateProduct',
+                        element: <CreateProduct />,
+                    },
+                    {
+                        path: '/DescriptionProduct',
+                        element: <DescriptionProduct />,
+                        
+                    },    
+                    {
+                        path: '/ProductList/id',
+                        element: <ProductList />,
+                        
+                    }, 
+                ]
             },
-            {
-                path: "/products/products/:id",
-                element: <ProductInfo />,
-                loader: fetchProduct,
-            },
-            {
-                path: "/newProduct",
-                element: <CreateProduct />,
-            },
-            {
-                path: "/homepage",
-                element: <Home />,
-            },
-            {
-                path: "/editProduct/:id",
-                element: <EditProduct />,
-                loader: fetchProduct
-            },
-
-        ],
-    },
+         
+        ]
+    },   
 ]);
-
-async function fetchProducts() {
-    const products = await productHandler.loadProducts();
-    return { products };
-}
-
-async function fetchProduct({ params }) {
-    const product = await productHandler.loadProduct(params.id);
-    return { product };
-}
