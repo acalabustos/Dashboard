@@ -7,11 +7,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import  Img from '../Img/logo proyecto.png';
 import "../Style/Navbar.css";
 
+
 function FirstNav() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar style={{ backgroundColor: '#24B399' }} bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand ><img src={Img} /></Navbar.Brand>
+        <Navbar.Brand href='Home'><img src={Img} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -19,31 +20,19 @@ function FirstNav() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+            {/* <Nav.Link href="#action1">Your Products</Nav.Link> */}
           </Nav>
           <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="Search Categories"
               className="me-2"
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
-          </Form>
+            {/* <Nav.Link id='NavbarLink' href="#action2">Add Product </Nav.Link> */}
+          </Form>          
+            
         </Navbar.Collapse>
       </Container>
     </Navbar>

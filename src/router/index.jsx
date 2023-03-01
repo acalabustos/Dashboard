@@ -15,25 +15,25 @@ export const router = createBrowserRouter([
         element: <Root />,
         children: [
             {
-                path: "products",
+                path: "/products",
                 element: <Dashboard />,
                 loader: fetchProducts,
             },
             {
-                path: "products/products/:id",
+                path: "/products/products/:id",
                 element: <ProductInfo />,
                 loader: fetchProduct,
             },
             {
-                path: "newProduct",
+                path: "/newProduct",
                 element: <CreateProduct />,
             },
             {
-                path: "homepage",
+                path: "/homepage",
                 element: <Home />,
             },
             {
-                path: "editProduct/:id",
+                path: "/editProduct/:id",
                 element: <EditProduct />,
                 loader: fetchProduct
             },

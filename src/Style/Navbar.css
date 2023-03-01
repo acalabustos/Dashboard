@@ -3,3 +3,12 @@ img{
   width: 12rem;
   height: 3rem;
   }
+
+.navbar {
+  background-color: #24B399 !important; 
+}
+
+#NavbarLink{
+  background-color: #F2CC49;
+  border-radius: 10%;
+}
