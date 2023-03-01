@@ -9,7 +9,7 @@ export const productsHandler = {
         }
 
         let newProductStructure = {
-            "id": "" ,
+           /*  "id": "" , */
             "name": newProduct.name,
             "description": newProduct.description,
             "category": newProduct.category,
@@ -28,5 +28,26 @@ export const productsHandler = {
     loadProduct(id){
         return productService.getProducts(id);
 
+},
+deleteProduct(id){
+    return productService.deleteProduct(id);
+},
+updateProduct(id, updatedProduct){
+    if (!updatedProduct) {
+        return;
+    }
+
+    let updatedProductStructure = {
+        "name": updatedProduct.title,
+        "description": updatedProduct.description,
+        "category": updatedProduct.category,
+        "brand":updatedProduct.brand,
+        "condicition":updatedProduct.condition,
+        "price": updatedProduct.price,
+        "image": updatedProduct.image
+    }
+
+    return productService.updateProduct(id, updatedProductStructure);
 }
+
 }  

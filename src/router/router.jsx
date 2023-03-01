@@ -1,13 +1,11 @@
-
 import { createBrowserRouter } from "react-router-dom";
 import Root from "./Root";
 import ProductList from "../Pages/ProductList";
-import Home from "../Pages/Home";
-/* import EditProduct from "../Pages/EditProduct"; */
 import ProductInfo from "../components/ProductInfo";
 
-import {productsHandler} from "../handlers/productsHandler";        
-import Form from "../components/Form";
+import {productsHandler} from "../handlers/productsHandler";  
+import Form from "../components/Form";      
+
 
 
 export const router = createBrowserRouter([
@@ -15,6 +13,11 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Root />,
         children: [
+            {
+                path: "/",
+                element: <ProductList/>,
+                loader: fetchProducts,
+            },
             {
                 path: "products",
                 element: <ProductList/>,
@@ -29,13 +32,10 @@ export const router = createBrowserRouter([
                 path: "newProduct",
                 element: <Form />,
             },
-            {
-                path: "homepage",
-                element: <Home />,
-            },
+         
             {
                 path: "editProduct/:id",
-                element: <EditProduct />,
+                element: <editProduct />,
                 loader: fetchProduct
             },
 

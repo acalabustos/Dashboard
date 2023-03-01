@@ -1,4 +1,4 @@
-/* import { Link, useLoaderData } from "react-router-dom"
+import { Link, useLoaderData } from "react-router-dom"
 import Product from '../components/Product'
 
 
@@ -16,4 +16,4 @@ function ProductList() {
     )
 }
 
-export default ProductList; */
+export default ProductList;

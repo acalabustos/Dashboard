@@ -2,6 +2,7 @@ import "../components/Product.css";
 import { useLoaderData } from "react-router-dom";
 
 
+
 function ProductInfo() {
 
     const { product } = useLoaderData();
