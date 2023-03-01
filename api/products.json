@@ -1,7 +1,19 @@
 
-{"products": [
+{
+    "products": [
     {
     "id": "" ,
+    "img":"" ,
+    "name":"botas",
+    "description":"",
+    "category":"",
+    "brand":"",
+    "condicition":"",
+    "price": ""
+    },
+    {
+    "id": "" ,
+    "img":"" ,
     "name":"camiseta",
     "description":"",
     "category":"",
@@ -10,24 +22,36 @@
     "price": ""
     },
     {
-        "id": "" ,
-        "name":"camiseta",
-        "description":"",
-        "category":"",
-        "brand":"",
-        "condicition":"",
-        "price": ""
-        },
-        {
-            "id": "" ,
-            "name":"camiseta",
-            "description":"",
-            "category":"",
-            "brand":"",
-            "condicition":"",
-            "price": ""
-            }
-      
+    "id": "" ,
+    "img":"" ,
+    "name":"pantalon",
+    "description":"",
+    "category":"",
+    "brand":"",
+    "condicition":"",
+    "price": ""
+    },
+    {
+    "id": "" ,
+    "img":"cuadro" ,
+    "name":"",
+    "description":"",
+    "category":"",
+    "brand":"",
+    "condicition":"",
+    "price": ""
+    },
+    {
+    "id": "" ,
+    "img":"mapaq" ,
+    "name":"",
+    "description":"",
+    "category":"",
+    "brand":"",
+    "condicition":"",
+    "price": ""
+    }
+
 ]
 
 }
