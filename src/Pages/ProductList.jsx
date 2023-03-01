@@ -1,10 +1,7 @@
 import { Link, useLoaderData } from "react-router-dom"
 import Product from '../components/Product'
-
-
 function ProductList() {
     const { products } = useLoaderData();
-
     return (
         <>
         {products.map((product) => (
@@ -15,5 +12,4 @@ function ProductList() {
       </>
     )
 }
-
 export default ProductList;

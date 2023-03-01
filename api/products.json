@@ -1,7 +1,19 @@
 
-{"products": [
+{
+    "products": [
     {
     "id": "" ,
+    "img":"" ,
+    "name":"botas",
+    "description":"",
+    "category":"",
+    "brand":"",
+    "condicition":"",
+    "price": ""
+    },
+    {
+    "id": "" ,
+    "img":"" ,
     "name":"camiseta",
     "description":"",
     "category":"",
