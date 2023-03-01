@@ -12,28 +12,40 @@ import { NavLink } from 'react-router-dom'
 function FirstNav() {
   return (
     <Navbar style={{ backgroundColor: '#24B399' }} bg="light" expand="lg">
+
       <Container fluid>
-        <Navbar.Brand href='Home'><img src={Img} /></Navbar.Brand>
+        <Navbar.Brand  href='/'><img src={Img} /></Navbar.Brand>
+
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            {/* <Nav.Link href="#action1">Your Products</Nav.Link> */}
-          </Nav>
-          <Form className="d-flex">
+
+        <Form className="d-flex">
+
             <Form.Control
               type="search"
               placeholder="Search Categories"
               className="me-2"
               aria-label="Search" />
-            <Button variant="outline-success">Search</Button>
-            {/* <Nav.Link id='NavbarLink' href="#action2">Add Product </Nav.Link> */}
-          </Form>          
-            
+            <Button variant="outline-success">Search</Button>           
+          </Form>    
+          
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >         
+          </Nav>
+
+          <Nav.Link href="#action1">Your Products</Nav.Link>
+
+          <Nav.Link href="/DescriptionProduct">Description</Nav.Link>      
+                    
         </Navbar.Collapse>
+
+            
+           
+        <NavLink to="/CreateProduct" className="btn btn-outline-primary">+ Add Product</NavLink>
+
       </Container>
     </Navbar>
   );
