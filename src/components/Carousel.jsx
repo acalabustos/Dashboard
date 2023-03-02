@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Img from '../Img/logo proyecto.png';
+import Img from '../Img/A.jpg';
 
 
 function sequenceImg() {
@@ -7,7 +7,7 @@ function sequenceImg() {
     <Carousel slide={false}>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-100"
           src={Img}
           alt="First slide"
         />
