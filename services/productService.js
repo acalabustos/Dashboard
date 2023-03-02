@@ -16,6 +16,6 @@ export const productService = {
     },
 
     async submitProduct(newProduct){
-        await apiClient.post("/products", newProduct.name)
+        await apiClient.post("/products", newProduct)
     }
 }
