@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import { productsHandler } from "../handlers/productsHandler";
 
 import LayoutPublic from "../layout/LayoutPublic";
 
@@ -31,9 +32,9 @@ export const router = createBrowserRouter([
                         
                     },    
                     {
-                        path: '/ProductList/id',
+                        path: '/ProductList',
                         element: <ProductList />,
-                        
+                        loader: fetchProducts
                     }, 
                 ]
             },
@@ -41,3 +42,14 @@ export const router = createBrowserRouter([
         ]
     },   
 ]);
+
+
+async function fetchProducts() {
+    const products = await productsHandler.loadProducts();
+    return { products };
+}
+
+async function fetchProduct({ params }) {
+    const product = await productsHandler.loadProduct(params.id);
+    return { product };
+}

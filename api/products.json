@@ -2,7 +2,7 @@
 {
     "products": [
     {
-    "id": "" ,
+    "id": 1 ,
     "img":"" ,
     "name":"botas",
     "description":"",
@@ -12,7 +12,7 @@
     "price": ""
     },
     {
-    "id": "" ,
+    "id": 2 ,
     "img":"" ,
     "name":"camiseta",
     "description":"",
@@ -22,7 +22,7 @@
     "price": ""
     },
     {
-        "id": "" ,
+        "id": 3 ,
         "name":"camiseta",
         "description":"",
         "category":"",
@@ -31,8 +31,8 @@
         "price": ""
         },
         {
-            "id": "" ,
-            "name":"camiseta",
+            "id": 4 ,
+            "name":"camiseta",  
             "description":"",
             "category":"",
             "brand":"",

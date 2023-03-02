@@ -2,6 +2,7 @@ import { Link, useLoaderData } from "react-router-dom"
 import Product from '../components/Product'
 function ProductList() {
     const { products } = useLoaderData();
+    console.log(products)
     return (
         <>
         {products.map((product) => (
