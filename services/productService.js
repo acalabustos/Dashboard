@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const apiClient = axios.create({
     baseURL: 'http://localhost:3000',
     withCredentials: false,
@@ -8,14 +10,24 @@ const apiClient = axios.create({
 })
 
 export const productService = {
-   /*  async getProducts() {
+    async getProducts() {
       let response = await apiClient.get("/products");
       console.log(response.data);
       return response.data;
-  
-    }, */
+    },
 
+    async getProduct(id) {
+      let response = await apiClient.get("products/" + id);
+      let product = response.data;
+      return product;
+  },
     async submitProduct(newProduct){
-        await apiClient.post("/product", newProduct.name)
-    }
+        await apiClient.post("/products", newProduct.name)
+    },
+    async deleteProduct(id){
+      await apiClient.delete("products/" + id)
+  },
+  async updateProduct(id, updatedProduct){
+      await apiClient.patch("/products/" + id, updatedProduct)
+  }
 }

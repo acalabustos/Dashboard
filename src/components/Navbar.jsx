@@ -1,4 +1,3 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -6,49 +5,34 @@ import Navbar from 'react-bootstrap/Navbar';
 import Img from '../Img/logo proyecto.png';
 import "../Style/Navbar.css";
 import { NavLink } from 'react-router-dom'
-
-
-
+import Button from 'react-bootstrap/Button';
 function FirstNav() {
   return (
-    <Navbar style={{ backgroundColor: '#24B399' }} bg="light" expand="lg">
-
+    <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand  href='/'><img src={Img} /></Navbar.Brand>
-
+        <Navbar.Brand >
+          <NavLink to="/" className="btn btn-outline-primary">
+            <img src={Img} />
+          </NavLink>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-
-        <Form className="d-flex">
-
+        <Navbar.Collapse id="navbarScroll">
+          <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search Categories"
+              placeholder="Search"
               className="me-2"
               aria-label="Search" />
-            <Button variant="outline-success">Search</Button>           
-          </Form>    
-          
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >         
+            <Button variant="outline-success">Search</Button>
+          </Form>
+          <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} >
+            <Nav.Link href="#action1">Fav</Nav.Link>
+            <Nav.Link href="/DescriptionProduct">Email</Nav.Link>
+            <NavLink to="/CreateProduct" className="btn btn-outline-primary">+ Add Product</NavLink>
           </Nav>
-
-          <Nav.Link href="#action1">Your Products</Nav.Link>
-
-          <Nav.Link href="/DescriptionProduct">Description</Nav.Link>      
-                    
         </Navbar.Collapse>
-
-            
-           
-        <NavLink to="/CreateProduct" className="btn btn-outline-primary">+ Add Product</NavLink>
-
       </Container>
     </Navbar>
   );
 }
-
 export default FirstNav;
