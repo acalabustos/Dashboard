@@ -26,21 +26,27 @@ function FormUpload() {
   };
   const handleNameChange = (event) => {
     setName(event.target.value);
+    setName(nameInput);
   };
   const handleDescriptionChange = (event) => {
     setDescription(event.target.value);
+    setDescription(descriptionInput);
   };
   const handleCategoryChange = (event) => {
     setCategory(event.target.value);
+    setCategory(categoryInput);
   };
   const handleBrandChange = (event) => {
     setBrand(event.target.value);
+    setBrand(brandInput);
   };
- /*  const handleConditionChange = (event) => {
+  const handleConditionChange = (event) => {
     setCondition(event.target.value);
-  }; */
+    setCondition(contiditonInput);
+  }; 
   const handlePriceChange = (event) => {
     setPrice(event.target.value);
+    setPrice(priceInput);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -66,7 +72,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className='mb-3'>
-        <Form.Label htmlFor="textInput">Nombre:</Form.Label>
+        <Form.Label htmlFor="textInput">Name:</Form.Label>
         <Form.Control 
         id="textInput"  
         value={name} 
@@ -85,7 +91,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Pregunta:</Form.Label>
+        <Form.Label htmlFor="textInput">Category:</Form.Label>
         <Form.Control 
         id="textInput" 
         value={category} 
@@ -102,7 +108,7 @@ function FormUpload() {
         placeholder="Add brand" />
       </Form.Group>
 
-  {/*     <Form.Group className="mb-3">
+       <Form.Group className="mb-3">
         <Form.Label htmlFor="select">Condition:</Form.Label>
         <Form.Select 
         id="select"
@@ -115,7 +121,7 @@ function FormUpload() {
           <option value={"good"}>Good</option>
           <option value={"satisfactory"}>Satisfactory</option>
         </Form.Select>
-      </Form.Group> */}
+      </Form.Group> 
 
       <Form.Group className="mb-3">
         <Form.Label htmlFor="numberInput">Price:</Form.Label>
