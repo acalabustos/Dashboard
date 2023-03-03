@@ -31,16 +31,10 @@ export const router = createBrowserRouter([
                         
                     },    
                     {
-<<<<<<< HEAD
-                        path: '/ProductList',
-                        element: <ProductList />,
-                        loader: fetchProducts
-=======
                         path: '/productList',
                         element: <ProductList />,
                         loader: fetchProducts
                         
->>>>>>> feature/route
                     }, 
 
                 ]
@@ -50,10 +44,6 @@ export const router = createBrowserRouter([
     },   
 ]);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> feature/route
 async function fetchProducts() {
     const products = await productsHandler.loadProducts();
     return { products };
@@ -62,8 +52,4 @@ async function fetchProducts() {
 async function fetchProduct({ params }) {
     const product = await productsHandler.loadProduct(params.id);
     return { product };
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> feature/route
