@@ -1,0 +1,51 @@
+form{
+ font-family: 'lobster';
+}
+
+.mb-3{
+    display: flex;
+    flex-direction: column;
+    justify-content:last baseline;   
+    background-color: #24B399;
+    border-radius: .625rem;
+    height: 6.25rem;
+  
+
+
+}
+
+#StyleControl {
+    background-color: #f2cd499a ; 
+    width: 50%;
+    align-self: flex-end;
+    margin-right: 5%;
+    
+}
+
+#numberInput {
+    background-color: #f2cd499a ; 
+    width: 50%;
+    align-self: flex-end;
+    margin-right: 5%;
+    
+}
+
+#select {
+   background-color: #f2cd499a ; 
+   width: 50%;
+   align-self: flex-end;
+   margin-right: 5%;
+}
+
+#textInput{
+    background-color: #f2cd499a !important;
+    width: 50%;
+    align-self: flex-end;
+    margin-right: 5%;
+   
+}
+
+ #Send{
+    background-color: #24B399;
+    margin-left: 45%;
+ }

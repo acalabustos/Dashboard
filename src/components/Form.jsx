@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import "../Style/Form.css";
 
 function FormUpload() {
   const [previewImage, setPreviewImage] = useState(null);
@@ -49,8 +50,9 @@ function FormUpload() {
     
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Label>Imagen:</Form.Label>
-        <Form.Control
+        <Form.Label>Upload Image:</Form.Label>
+        <Form.Control 
+          id="StyleControl"
           type="file"
           accept="image/*"
           onChange={(e) => handleImageChange(e)}
@@ -79,7 +81,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Category:</Form.Label>
+        <Form.Label id="StyleLabel" htmlFor="textInput">Category:</Form.Label>
         <Form.Control 
         id="textInput" 
         value={category} 
@@ -122,7 +124,7 @@ function FormUpload() {
       </Form.Group>
 
 
-      <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit" id="Send"> 
         Send
       </Button>
     </Form>

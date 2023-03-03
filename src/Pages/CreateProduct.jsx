@@ -11,7 +11,7 @@ function CreateProduct() {
   return (
     <div>
       <ButtonProduct className="primary" onClick={handleClick}>
-        Haz clic aquí
+        + Add Product
       </ButtonProduct>
       
       <Container fluid>
