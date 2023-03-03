@@ -29,7 +29,8 @@ function FirstNav() {
               placeholder="Search Categories"
               className="me-2"
               aria-label="Search" />
-            <Button variant="outline-success">Search</Button>           
+            <Button variant="outline-success">Search</Button>  
+                     
           </Form>    
          
         <Navbar.Collapse id="navbarScroll">
@@ -62,7 +63,7 @@ function FirstNav() {
 
             
            
-        <NavLink to="/CreateProduct" className="btn btn-outline-primary">+ Add Product</NavLink>
+        <NavLink to="/CreateProduct" className="btn btn-outline-primary" style={{background: '#F2CC49', border: '2px solid #2D1C28', color: 'Black'}}>+ Add Product</NavLink>
 
       </Container>
     </Navbar>

@@ -8,6 +8,8 @@ img{
   background-color: #24B399 !important; 
   font-family: 'lobster Two';
   margin-bottom: 5%;
+  padding-right: 4%;
+  padding-left: 3%;
 }
 
 form{
@@ -22,3 +24,4 @@ form{
   margin-right: 8%;
   margin-left: 8%;
 }
+
