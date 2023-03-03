@@ -50,7 +50,7 @@ function FormUpload() {
     
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Label>Upload Image:</Form.Label>
+        <div className='centerText'><Form.Label>Upload Image:</Form.Label></div>
         <Form.Control 
           id="StyleControl"
           type="file"
@@ -63,7 +63,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className='mb-3'>
-        <Form.Label htmlFor="textInput">Product:</Form.Label>
+        <div className='centerText'><Form.Label htmlFor="textInput">Product:</Form.Label></div>
         <Form.Control 
         id="textInput"  
         value={title} 
@@ -72,7 +72,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Description:</Form.Label>
+       <div className='centerText'><Form.Label htmlFor="textInput">Description:</Form.Label></div>
         <Form.Control 
         id="textInput" 
         value={description} 
@@ -81,7 +81,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label id="StyleLabel" htmlFor="textInput">Category:</Form.Label>
+        <div className='centerText'><Form.Label id="StyleLabel" htmlFor="textInput">Category:</Form.Label></div>
         <Form.Control 
         id="textInput" 
         value={category} 
@@ -90,7 +90,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Brand:</Form.Label>
+        <div className='centerText'><Form.Label htmlFor="textInput">Brand:</Form.Label></div>
         <Form.Control 
         id="textInput" 
         value={brand} 
@@ -99,7 +99,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="select">Condition:</Form.Label>
+        <div className='centerText'><Form.Label htmlFor="select">Condition:</Form.Label></div>
         <Form.Select 
         id="select"
         name= "condition"
@@ -114,7 +114,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="numberInput">Price:</Form.Label>
+        <div className='centerText'><Form.Label htmlFor="numberInput">Price:</Form.Label></div>
         <Form.Control 
         id="numberInput" 
         value={price}
@@ -123,7 +123,7 @@ function FormUpload() {
         placeholder="Add price" />
       </Form.Group>
       
-      <Button variant="primary" type="submit" id="Send"> 
+      <Button variant="primary" type="submit" id="Send">  
         Send
       </Button>
     </Form>

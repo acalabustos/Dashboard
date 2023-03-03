@@ -10,10 +10,14 @@ form{
     background-color: #24B399;
     border-radius: .625rem;
     height: 6.25rem;
-  
-
-
+    border: solid #f2cd4959 2px;
 }
+
+/* .centerText{
+ display: flex;
+ 
+ 
+} */
 
 #StyleControl {
     background-color: #edf3c5 ; 
@@ -47,6 +51,14 @@ form{
 }
 
  #Send{
+    font-size: x-large;
+    width: 20%;
+    height: 20%;
     background-color: #24B399;
-    margin-left: 45%;
+    margin-left: 40%;
+    margin-top: 3%;
+    padding: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border: solid #f2cd4959 2px;
  }

@@ -20,8 +20,6 @@ function FirstNav() {
       <Container fluid>
         <Navbar.Brand  href='/'><img src={Img} /></Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbarScroll" />
-
         <Form className="d-flex">
 
             <Form.Control
@@ -59,11 +57,11 @@ function FirstNav() {
 
           <Nav.Link className='Links' href="/DescriptionProduct">Description</Nav.Link>      
                     
-        </Navbar.Collapse>
-
-            
+        </Navbar.Collapse>            
            
         <NavLink to="/CreateProduct" className="btn btn-outline-primary" style={{background: '#F2CC49', border: '2px solid #2D1C28', color: 'Black'}}>+ Add Product</NavLink>
+
+        <Navbar.Toggle aria-controls="navbarScroll" />
 
       </Container>
     </Navbar>
