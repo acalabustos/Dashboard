@@ -115,7 +115,7 @@ function FormUpload() {
           <option value={"good"}>Good</option>
           <option value={"satisfactory"}>Satisfactory</option>
         </Form.Select>
-      </Form.Group> */}
+      </Form.Group> 
 
       <Form.Group className="mb-3">
         <Form.Label htmlFor="numberInput">Price:</Form.Label>
