@@ -1,45 +1,13 @@
-
 {
-    "products": [
+  "products": [
     {
-    "id": "" ,
-    "img":"" ,
-    "name":"botas",
-    "description":"",
-    "category":"",
-    "brand":"",
-    "condicition":"",
-    "price": ""
-    },
-    {
-    "id": "" ,
-    "img":"" ,
-    "name":"camiseta",
-    "description":"",
-    "category":"",
-    "brand":"",
-    "condition":"",
-    "price": ""
-    },
-    {
-        "id": "" ,
-        "name":"camiseta",
-        "description":"",
-        "category":"",
-        "brand":"",
-        "condition":"",
-        "price": ""
-        },
-        {
-            "id": "" ,
-            "name":"camiseta",
-            "description":"",
-            "category":"",
-            "brand":"",
-            "condition":"",
-            "price": ""
-            }
-      
-]
-
+      "name": "camiseta",
+      "description": "gorra",
+      "category": "camiseta",
+      "brand": "",
+      "condition": "",
+      "price": "10",
+      "id": 1
+    }
+  ]
 }

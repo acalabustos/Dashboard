@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { productsHandler } from '../handlers/productsHandler';
 import { Form, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function FormUpload() {
   const [previewImage, setPreviewImage] = useState(null);
@@ -42,8 +43,10 @@ function FormUpload() {
     setPrice(event.target.value);
   };
   const handleSubmit = (event) => {
-    event.prevetDefault();
+    event.preventDefault();
     let newProduct = {name, description, category, brand, condition, price};
+    console.log("esto es el producto", newProduct);
+  
         productsHandler.addProduct(newProduct);
   }
 
@@ -125,9 +128,10 @@ function FormUpload() {
       </Form.Group>
 
 
-      <Button variant="primary" type="submit">
+{      <Button variant="primary" type="submit" href="/ProductList">
         Send
       </Button>
+}
     </Form>
   
   );

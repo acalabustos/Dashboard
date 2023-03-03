@@ -17,9 +17,9 @@ function Product({ product }) {
                 <p>price: {price}$</p>
             </div>
             <div className="productCard--buttons">
-                <DeleteIcon fontSize="large" />
+                <button>Delete</button>
                 <Link className="edit--link" to={`/editProduct/${product.id}`}>
-                    <EditIcon fontSize="large" color="inherit" />
+                <button>Edit</button>
                 </Link>
             </div>
         </div>
