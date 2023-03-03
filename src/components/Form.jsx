@@ -122,8 +122,7 @@ function FormUpload() {
         onChange={handlePriceChange}
         placeholder="Add price" />
       </Form.Group>
-
-
+      
       <Button variant="primary" type="submit" id="Send"> 
         Send
       </Button>
