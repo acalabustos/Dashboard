@@ -3,11 +3,17 @@
 
 
  function Tip() {
+   const textStyle = {
+    fontFamily: 'Overlock',
+    fontWeight: 'normal'
+   }
+   
+
    return (
      <Accordion defaultActiveKey="0" id="AccordionContainer">
        <Accordion.Item eventKey="0">
-         <Accordion.Header>What is an organic product?</Accordion.Header>
-         <Accordion.Body>
+         <Accordion.Header style={textStyle}>What is an organic product?</Accordion.Header>
+         <Accordion.Body style={textStyle}>
             An organic product must bear the seal of the European Union of Organic Agriculture, 
             which means that it has to comply with the production and processing standards set by these regulations. 
             There are several synonyms for organic products, such as eco, organic, biological or bio.
@@ -20,8 +26,8 @@
          </Accordion.Body>
    </Accordion.Item>
     <Accordion.Item eventKey="1">
-        <Accordion.Header>Yes to second-hand products. Re-use</Accordion.Header>
-      <Accordion.Body>
+        <Accordion.Header style={textStyle}>Yes to second-hand products. Re-use</Accordion.Header>
+      <Accordion.Body style={textStyle}>
            The best waste is the waste that does not exist, 
             and producers should therefore extend the useful life of products by preventing planned
            obsolescence and making appliances easy to repair and spare parts that can be sold for a longer period of time.

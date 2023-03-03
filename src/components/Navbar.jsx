@@ -5,11 +5,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Img from '../Img/logo proyecto.png';
 import "../Style/Navbar.css";
+import { FaRegHeart } from 'react-icons/fa'
+import { FiMail } from 'react-icons/fi'
+import { IconContext } from 'react-icons';
 import { NavLink } from 'react-router-dom'
 
 
 
 function FirstNav() {
+
   return (
     <Navbar style={{ backgroundColor: '#24B399' }} bg="light" expand="lg">
 
@@ -27,7 +31,7 @@ function FirstNav() {
               aria-label="Search" />
             <Button variant="outline-success">Search</Button>           
           </Form>    
-          
+         
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
@@ -35,12 +39,24 @@ function FirstNav() {
             navbarScroll
           >         
           </Nav>
-
+          
           <Nav.Link href="#action1">
            
-          </Nav.Link>
+          </Nav.Link> 
+          
+          <div className='StyleIcons'>
+            <IconContext.Provider value={{ color: '#f2cc49', size: '2em' }}>
+              <FaRegHeart/>    
+            </IconContext.Provider>
+          </div>
 
-          <Nav.Link href="/DescriptionProduct">Description</Nav.Link>      
+          <div>
+            <IconContext.Provider value={{ color: '#f2cc49', size: '2em' }}>
+             <FiMail />
+            </IconContext.Provider>
+          </div>
+
+          <Nav.Link className='Links' href="/DescriptionProduct">Description</Nav.Link>      
                     
         </Navbar.Collapse>
 

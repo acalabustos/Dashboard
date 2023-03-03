@@ -3,7 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../Style/Home.css";
 import Accordion from '../components/Accordion';
 import Carousel from '../components/Carousel';
+
 function Home() {
+
     return (
         <div>
             <Container fluid>
