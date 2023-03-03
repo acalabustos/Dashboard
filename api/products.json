@@ -2,8 +2,8 @@
 {
     "products": [
     {
-    "id": "" ,
-    "img":"" ,
+    "id": 1 ,
+    "img":"https://cdn-icons-png.flaticon.com/512/1400/1400329.png" ,
     "name":"botas",
     "description":"",
     "category":"",
@@ -12,32 +12,32 @@
     "price": ""
     },
     {
-    "id": "" ,
+    "id": 2 ,
     "img":"" ,
     "name":"camiseta",
-    "description":"",
+    "description":"gtegtg",
     "category":"",
     "brand":"",
     "condition":"",
     "price": ""
     },
     {
-        "id": "" ,
+        "id": 3 ,
         "name":"camiseta",
-        "description":"",
-        "category":"",
-        "brand":"",
+        "description":"hahah",
+        "category":"sss",
+        "brand":"sss",
         "condition":"",
         "price": ""
         },
         {
-            "id": "" ,
+            "id": 4 ,
             "name":"camiseta",
-            "description":"",
-            "category":"",
-            "brand":"",
-            "condition":"",
-            "price": ""
+            "description":"hhgg",
+            "category":"ssss",
+            "brand":"ssss",
+            "condition":"sss",
+            "price": "sss"
             }
       
 ]

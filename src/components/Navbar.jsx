@@ -1,4 +1,4 @@
-import Button from 'react-bootstrap/Button';
+
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Img from '../Img/logo proyecto.png';
 import "../Style/Navbar.css";
 import { NavLink } from 'react-router-dom'
-
+import Button from 'react-bootstrap/Button';
 
 function FirstNav() {
   return (

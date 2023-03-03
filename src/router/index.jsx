@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-
+import { productsHandler } from "../handlers/productsHandler";
 import LayoutPublic from "../layout/LayoutPublic";
-
 import Home from '../pages/Home';
 import CreateProduct from '../pages/CreateProduct';
 import DescriptionProduct from '../pages/DescriptionProduct';
@@ -12,32 +11,42 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: <LayoutPublic />,
-        errorElement: <NotFound />, 
+        errorElement: <NotFound />,
         children: [
             {
                 errorElement: <NotFound />,
                 children: [
                     {
                         index: true,
-                        element: <Home />, 
+                        element: <Home />,
+                        
                     },
                     {
                         path: '/CreateProduct',
                         element: <CreateProduct />,
+                        loader: fetchProduct
                     },
                     {
-                        path: '/DescriptionProduct',
+                        path: '/products/:id',
                         element: <DescriptionProduct />,
                         
-                    },    
+                    },
                     {
-                        path: '/ProductList/id',
+                        path: '/ProductList',
                         element: <ProductList />,
-                        
-                    }, 
+                        loader: fetchProducts
+                    },
+                    
                 ]
             },
-         
         ]
-    },   
+    },
 ]);
+async function fetchProducts() {
+    const products = await productsHandler.loadProducts();
+    return { products };
+}
+async function fetchProduct({ params }) {
+    const product = await productsHandler.loadProduct(params.id);
+    return { product };
+}
