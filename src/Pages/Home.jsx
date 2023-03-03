@@ -9,9 +9,7 @@ function Home() {
             <Container fluid>
                 <div className="prueba">
                     <Row>
-
-                        <h1>Buy and sell second-hand goods</h1>
-                        <p>Here I am! Just look for me</p>
+                        
                         <Carousel></Carousel>
 
                         <Accordion defaultActiveKey="3">

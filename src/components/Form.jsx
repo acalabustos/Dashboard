@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import "../Style/Form.css"
 
 function FormUpload() {
   const [previewImage, setPreviewImage] = useState(null);
@@ -122,7 +123,7 @@ function FormUpload() {
       </Form.Group>
 
 
-      <Button variant="primary" type="submit">
+      <Button  class="btn btn-custom" variant="primary" type="submit">
         Send
       </Button>
     </Form>
