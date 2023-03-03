@@ -2,4 +2,14 @@
 img{
   width: 12rem;
   height: 3rem;
-  } 
+  }
+
+.navbar {
+  background-color: #24B399 !important; 
+  font-family: 'lobster Two';
+  margin-bottom: 5%;
+}
+
+form{
+ margin-top: 0;
+}
