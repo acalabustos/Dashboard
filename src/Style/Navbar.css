@@ -7,8 +7,9 @@ img{
 .navbar {
   background-color: #24B399 !important; 
   font-family: 'lobster Two';
+  margin-bottom: 5%;
 }
 
 form{
-  padding-left: 10%;
+ margin-top: 0;
 }

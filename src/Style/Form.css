@@ -1,5 +1,6 @@
 form{
  font-family: 'lobster';
+ margin-top: 30%;
 }
 
 .mb-3{
@@ -15,7 +16,7 @@ form{
 }
 
 #StyleControl {
-    background-color: #f2cd499a ; 
+    background-color: #edf3c5 ; 
     width: 50%;
     align-self: flex-end;
     margin-right: 5%;
@@ -23,7 +24,7 @@ form{
 }
 
 #numberInput {
-    background-color: #f2cd499a ; 
+    background-color: #edf3c5  ; 
     width: 50%;
     align-self: flex-end;
     margin-right: 5%;
@@ -31,14 +32,14 @@ form{
 }
 
 #select {
-   background-color: #f2cd499a ; 
+   background-color: #edf3c5  ; 
    width: 50%;
    align-self: flex-end;
    margin-right: 5%;
 }
 
 #textInput{
-    background-color: #f2cd499a !important;
+    background-color: #edf3c5  !important;
     width: 50%;
     align-self: flex-end;
     margin-right: 5%;

@@ -1,9 +1,13 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+
 
 function ButtonProduct (props) {
+  const buttonStyle = {
+    margin: '10px',
+  };
+
   return (
-    <button className={props.className} onClick={props.onClick}>
+    <button style={buttonStyle} className={props.className} onClick={props.onClick}>
       {props.children}
     </button>
   );
