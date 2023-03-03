@@ -25,7 +25,7 @@ function ProductList() {
     <>
       <section className="filter">
         <label htmlFor="">Search</label>
-        <input type="input" onChange={handleSearch} />
+        {/* <input type="input" onChange={handleSearch} /> */}
       </section>
 
       {filteredProducts.map((product) => (
