@@ -1,4 +1,8 @@
 import Card from 'react-bootstrap/Card';
+import Product from '../components/Product';
+import { Link, useLoaderData } from "react-router-dom"
+
+
 
 function CardProduct() {
   return (

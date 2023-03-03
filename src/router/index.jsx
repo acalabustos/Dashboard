@@ -1,18 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
-import { productsHandler } from "../handlers/productsHandler";
-
-import LayoutPublic from "../layout/LayoutPublic";
-
 import Home from '../pages/Home';
 import CreateProduct from '../pages/CreateProduct';
-import DescriptionProduct from '../pages/DescriptionProduct';
 import ProductList from '../pages/ProductList';
 import NotFound from "../pages/NotFound";
+import { productsHandler } from "../handlers/productsHandler";
+import ProductInfo from "../components/ProductInfo";
+import Root from "./Root";
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <LayoutPublic />,
+        element: <Root />,
         errorElement: <NotFound />, 
         children: [
             {
@@ -27,15 +25,24 @@ export const router = createBrowserRouter([
                         element: <CreateProduct />,
                     },
                     {
-                        path: '/DescriptionProduct',
-                        element: <DescriptionProduct />,
+                        path: "/productInfo/:id",
+                        element: <ProductInfo />,
+                        loader: fetchProduct
                         
                     },    
                     {
+<<<<<<< HEAD
                         path: '/ProductList',
                         element: <ProductList />,
                         loader: fetchProducts
+=======
+                        path: '/productList',
+                        element: <ProductList />,
+                        loader: fetchProducts
+                        
+>>>>>>> feature/route
                     }, 
+
                 ]
             },
          
@@ -43,7 +50,10 @@ export const router = createBrowserRouter([
     },   
 ]);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/route
 async function fetchProducts() {
     const products = await productsHandler.loadProducts();
     return { products };
@@ -52,4 +62,8 @@ async function fetchProducts() {
 async function fetchProduct({ params }) {
     const product = await productsHandler.loadProduct(params.id);
     return { product };
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> feature/route

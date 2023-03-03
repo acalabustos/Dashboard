@@ -1,0 +1,134 @@
+ESTE ES EL EJEMPLO QUE QUEREMOS USAR
+import { useLoaderData } from "react-router-dom"
+import { useState} from "react";
+import { productsHandler } from "../handlers/productsHandler";
+import Product from '../components/Product';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import '../Style/ProductList.css'
+
+
+function ProductList() {
+  const { products } = useLoaderData();
+  const [productsData, setProductsData] = useState(products);
+  const [searchValue, setSearchValue] = useState("");
+
+  const deleteProduct = async (id) => {
+    await productsHandler.deleteProduct(id);
+    setProductsData(productsData.filter(product => product.id !== id));
+  }
+
+  const handleSearch = (event) => {
+    let searchInput = event.target.value;
+    setSearchValue(searchInput);
+  }
+
+  let filteredProducts = productsData.filter(product => {
+    return product.title.toLowerCase().includes(searchValue.toLowerCase());
+  })
+
+  return (
+
+    <Card style={{ width: '18rem' }}>
+    <Card.Img variant="top" src={previewImage} />
+    <Card.Body>
+      <Card.Title>{name}</Card.Title>
+    </Card.Body>
+    <ListGroup className="list-group-flush">
+      <ListGroup.Item>{price}</ListGroup.Item>
+    </ListGroup>
+    <Card.Body>
+    <Card.Link to="/DescriptionProduct" className="btn btn-outline-primary">More Info</Card.Link>
+    </Card.Body>
+    
+    
+    <section className="filter">
+      <label htmlFor="">Search</label>
+      <input type="input" onChange={handleSearch} />
+
+        {filteredProducts.map((product) => (
+         <Product key={product.id} product={product} deleteProduct={deleteProduct} /> ))}
+
+    </section>
+  </Card>
+  
+  
+  )
+}
+
+export default ProductList;
+
+ESTE ES EL EJEMPLO DE SERGIO QUE FUNCIONA PERO QUE NOS COPIA LA ESTRUCTURA DE PRODUCT, NOSOTROS QUEREMOS LLAMAR A UNOS ELEMENTOS CONCRETOS PARA QUE SE VISUALICEN EN LA PARTE DE PRODUCTLIST
+import { Link, useLoaderData } from "react-router-dom"
+import Product from '../components/Product'
+
+function ProductList() {
+    const { products } = useLoaderData();
+    console.log(products)
+    return (
+        <>
+        {products.map((product) => (
+          <Link key={product.id} to={`products/${product.id}`} name={product.name} className="product--link">
+            <Product product={product} />
+          </Link>
+        ))}
+      </>
+    )
+}
+export default ProductList;
+
+ESTE ES UN EJEMPLO QUE ME HA DADO LA IA
+import { useLoaderData } from "react-router-dom";
+import { useState } from "react";
+import { productsHandler } from "../handlers/productsHandler";
+import Product from '../components/Product';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import '../Style/ProductList.css'
+
+function ProductList() {
+  const { products } = useLoaderData();
+  const [productsData, setProductsData] = useState(products || []);
+  const [searchValue, setSearchValue] = useState("");
+
+  const deleteProduct = async (id) => {
+    await productsHandler.deleteProduct(id);
+    setProductsData(productsData.filter(product => product.id !== id));
+  }
+
+  const handleSearch = (event) => {
+    let searchInput = event.target.value;
+    setSearchValue(searchInput);
+  }
+
+  // let filteredProducts = productsData.filter(product => {
+  //   return product.title.toLowerCase().includes(searchValue.toLowerCase());
+  // })
+
+  return (
+    <Card style={{ width: '18rem' }}>
+      {/* <Card.Img variant="top" src={previewImage} /> */}
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+      </Card.Body>
+      <ListGroup className="list-group-flush">
+        {/* <ListGroup.Item>{price}</ListGroup.Item> */}
+      </ListGroup>
+      <Card.Body>
+        <Card.Link to="/DescriptionProduct" className="btn btn-outline-primary">More Info</Card.Link>
+      </Card.Body>
+      
+      <section className="filter">
+        <label htmlFor="">Search</label>
+        <input type="input" onChange={handleSearch} />
+
+        {filteredProducts.map((product) => (
+          <Product key={product.id} product={product} />
+        ))}
+      </section>
+    </Card>
+  );
+}
+
+export default ProductList;
+

@@ -19,7 +19,7 @@ function Product({ product }) {
             <div className="productCard--buttons">
                 <button>Delete</button>
                 <Link className="edit--link" to={`/editProduct/${product.id}`}>
-                   <button>Edit</button>
+                <button>Edit</button>
                 </Link>
             </div>
         </div>

@@ -1,5 +1,8 @@
 import { Link, useLoaderData } from "react-router-dom"
 import Product from '../components/Product'
+
+
+
 function ProductList() {
     const { products } = useLoaderData();
     console.log(products)
@@ -9,6 +12,7 @@ function ProductList() {
           <Link key={product.id} to={`products/${product.id}`} name={product.name} className="product--link">
             <Product product={product} />
           </Link>
+          
         ))}
       </>
     )
