@@ -30,7 +30,7 @@ function FirstNav() {
 
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} >
             <Nav.Link href="#action1">Fav</Nav.Link>
-            <Nav.Link href="/DescriptionProduct">Email</Nav.Link>
+            <Nav.Link href="/ProductList">My products</Nav.Link>
             <NavLink to="/CreateProduct" className="btn btn-outline-primary">+ Add Product</NavLink>
           </Nav>
 

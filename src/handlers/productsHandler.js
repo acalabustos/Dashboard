@@ -1,5 +1,6 @@
 import { productService } from "../../services/productService";      
 
+
 export const productsHandler = {
     addProduct(newProduct){
         if (!newProduct) {
@@ -35,7 +36,7 @@ updateProduct(id, updatedProduct){
     }
 
     let updatedProductStructure = {
-        "name": updatedProduct.name,
+        "name": updatedProduct.title,
         "description": updatedProduct.description,
         "category": updatedProduct.category,
         "brand":updatedProduct.brand,

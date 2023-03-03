@@ -1,4 +1,4 @@
-/*import DeleteIcon from '@mui/icons-material/Delete';
+/* import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit'; */
 import { Link } from 'react-router-dom';
 
@@ -19,7 +19,7 @@ function Product({ product }) {
             <div className="productCard--buttons">
                 <button>Delete</button>
                 <Link className="edit--link" to={`/editProduct/${product.id}`}>
-                   <button>Edit</button>
+                <button>Edit</button>
                 </Link>
             </div>
         </div>

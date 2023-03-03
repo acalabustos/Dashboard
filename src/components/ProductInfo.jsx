@@ -1,4 +1,3 @@
-import "../components/Product.css";
 import { useLoaderData } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 
