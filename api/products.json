@@ -2,8 +2,8 @@
 {
     "products": [
     {
-    "id": "" ,
-    "img":"" ,
+    "id": 1 ,
+    "img":"https://cdn-icons-png.flaticon.com/512/1400/1400329.png" ,
     "name":"botas",
     "description":"",
     "category":"",
@@ -12,46 +12,34 @@
     "price": ""
     },
     {
-    "id": "" ,
+    "id": 2 ,
     "img":"" ,
     "name":"camiseta",
-    "description":"",
+    "description":"gtegtg",
     "category":"",
     "brand":"",
-    "condicition":"",
+    "condition":"",
     "price": ""
     },
     {
-    "id": "" ,
-    "img":"" ,
-    "name":"pantalon",
-    "description":"",
-    "category":"",
-    "brand":"",
-    "condicition":"",
-    "price": ""
-    },
-    {
-    "id": "" ,
-    "img":"cuadro" ,
-    "name":"",
-    "description":"",
-    "category":"",
-    "brand":"",
-    "condicition":"",
-    "price": ""
-    },
-    {
-    "id": "" ,
-    "img":"mapaq" ,
-    "name":"",
-    "description":"",
-    "category":"",
-    "brand":"",
-    "condicition":"",
-    "price": ""
-    }
-
+        "id": 3 ,
+        "name":"camiseta",
+        "description":"hahah",
+        "category":"sss",
+        "brand":"sss",
+        "condition":"",
+        "price": ""
+        },
+        {
+            "id": 4 ,
+            "name":"camiseta",
+            "description":"hhgg",
+            "category":"ssss",
+            "brand":"ssss",
+            "condition":"sss",
+            "price": "sss"
+            }
+      
 ]
 
 }

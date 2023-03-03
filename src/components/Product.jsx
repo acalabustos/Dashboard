@@ -1,30 +1,31 @@
-
-/* import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit'; */
-import { Link } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 function Product({ product }) {
 
-    const { name, description, category, brand, condition, price } = product;
+    const { previewImage, name, description, category, brand, condition, price } = product;
 
-    return (
-        <div className="productCard">
-            <div className="productCard--info">
-                <h1>{name}</h1>
-                <h1>{description}</h1>
-                <h1>{category}</h1>
-                <h1>{brand}</h1>
-                <h1>{condition}</h1>
-                <p>price: {price}$</p>
-            </div>
-            <div className="productCard--buttons">
-                <DeleteIcon fontSize="large" />
-                <Link className="edit--link" to={`/editProduct/${product.id}`}>
-                    <EditIcon fontSize="large" color="inherit" />
-                </Link>
-            </div>
-        </div>
-    )
+  return (
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={previewImage} />
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>
+        {description}
+        </Card.Text>
+      </Card.Body>
+      <ListGroup className="list-group-flush">
+        <ListGroup.Item>{category}</ListGroup.Item>
+        <ListGroup.Item>{brand}</ListGroup.Item>
+        <ListGroup.Item>{condition}</ListGroup.Item>
+        <ListGroup.Item>{price}</ListGroup.Item>
+      </ListGroup>
+      <Card.Body>
+      <Card.Link to="/CreateProduct/id" className="btn btn-outline-primary">Edgeetgegit</Card.Link>
+      <Card.Link to="/CreateProduct/id" className="btn btn-outline-primary">Delete</Card.Link>
+      </Card.Body>
+    </Card>
+  );
 }
 
-export default Product
+export default Product;

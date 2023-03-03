@@ -1,7 +1,5 @@
 import { productService } from "../../services/productService";      
 
-
-
 export const productsHandler = {
     addProduct(newProduct){
         if (!newProduct) {
@@ -9,7 +7,8 @@ export const productsHandler = {
         }
 
         let newProductStructure = {
-            "id": "" ,
+            "id": "" , 
+            "image": newProduct.image,
             "name": newProduct.name,
             "description": newProduct.description,
             "category": newProduct.category,
@@ -19,14 +18,35 @@ export const productsHandler = {
         }
 
         return productService.submitProduct(newProductStructure);   
-    }
+    },
 
-    /*loadProducts(){
+    loadProducts(){
         return productService.getProducts();
     },
 
-    loadProducts(id){
+    loadProduct(id){
         return productService.getProducts(id);
 
-}*/
+},
+deleteProduct(id){
+    return productService.deleteProduct(id);
+},
+updateProduct(id, updatedProduct){
+    if (!updatedProduct) {
+        return;
+    }
+
+    let updatedProductStructure = {
+        "name": updatedProduct.name,
+        "description": updatedProduct.description,
+        "category": updatedProduct.category,
+        "brand":updatedProduct.brand,
+        "condicition":updatedProduct.condition,
+        "price": updatedProduct.price,
+        "image": updatedProduct.image
+    }
+
+    return productService.updateProduct(id, updatedProductStructure);
+}
+
 }  
