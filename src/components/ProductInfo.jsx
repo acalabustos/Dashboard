@@ -9,6 +9,7 @@ function ProductInfo() {
 
     const { product } = useLoaderData();
     let {name, description, price} = product;
+    console.log("esto es lo que hay" + product);
 
     return (
 

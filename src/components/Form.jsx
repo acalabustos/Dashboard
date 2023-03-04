@@ -128,7 +128,7 @@ function FormUpload() {
       </Form.Group>
 
 
-{      <Button variant="primary" type="submit">
+{      <Button variant="primary"  href="/ProductList">
         Send
       </Button>
 }
