@@ -36,9 +36,9 @@ function FormUpload() {
   const handleBrandChange = (event) => {
     setBrand(event.target.value);
   };
- /*  const handleConditionChange = (event) => {
+   const handleConditionChange = (event) => {
     setCondition(event.target.value);
-  }; */
+  }; 
   const handlePriceChange = (event) => {
     setPrice(event.target.value);
   };
@@ -102,7 +102,7 @@ function FormUpload() {
         placeholder="Add brand" />
       </Form.Group>
 
-  {/*     <Form.Group className="mb-3">
+      <Form.Group className="mb-3">
         <Form.Label htmlFor="select">Condition:</Form.Label>
         <Form.Select 
         id="select"
