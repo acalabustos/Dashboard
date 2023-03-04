@@ -74,7 +74,7 @@ function FormUpload() {
             htmlFor="textInput">Product:
           </Form.Label>
         </div> 
-        <Form.Label htmlFor="textInput">Nombre:</Form.Label>
+       
         <Form.Control 
         id="textInput"  
         value={name} 
