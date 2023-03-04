@@ -1,23 +1,24 @@
 {
   "products": [
     {
-      "name": "camiseta",
-      "description": "gorra",
-      "category": "camiseta",
-      "brand": "",
-      "condition": "",
+      "name": "Camiseta Nike",
+      "description": "Color blanca de manga corta",
+      "category": "Camiseta",
+      "brand": "Nike",
+      "condition": "Buena",
       "price": "10",
       "id": 1
     },
     {
-      "name": "camiseta",
-      "description": "camiseta",
-      "category": "camiseta",
-      "brand": "camiseta",
-      "condition": "",
-      "price": "3",
-      "id": 2
-    },
+      "id": 12 ,
+      "img":"https://cdn-icons-png.flaticon.com/512/1400/1400329.png" ,
+      "name":"botas",
+      "description":"",
+      "category":"",
+      "brand":"",
+      "condicition":"",
+      "price": ""
+      },
     {
       "name": "camiseta",
       "description": "camiseta",
@@ -53,15 +54,7 @@
       "condition": "",
       "price": "",
       "id": 6
-    },
-    {
-      "name": "kojij",
-      "description": "kojij",
-      "category": "kojij",
-      "brand": "kojij",
-      "condition": "new",
-      "price": "555,",
-      "id": 7
     }
+    
   ]
 }
