@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { productsHandler } from '../handlers/productsHandler';
 import { Form, Button } from 'react-bootstrap';
 import "../Style/Form.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function FormUpload() {
   const [previewImage, setPreviewImage] = useState(null);
-  const [title, setTitle] = useState('');
+  const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
   const [brand, setBrand] = useState('');
@@ -23,8 +25,8 @@ function FormUpload() {
       imageReader.readAsDataURL(selectedImage);
     }
   };
-  const handleTitleChange = (event) => {
-    setTitle(event.target.value);
+  const handleNameChange = (event) => {
+    setName(event.target.value);
   };
   const handleDescriptionChange = (event) => {
     setDescription(event.target.value);
@@ -35,14 +37,18 @@ function FormUpload() {
   const handleBrandChange = (event) => {
     setBrand(event.target.value);
   };
-  const handleConditionChange = (event) => {
+   const handleConditionChange = (event) => {
     setCondition(event.target.value);
-  };
+  }; 
   const handlePriceChange = (event) => {
     setPrice(event.target.value);
   };
   const handleSubmit = (event) => {
-    event.prevetDefault();
+    event.preventDefault();
+    let newProduct = {name, description, category, brand, condition, price};
+    console.log("esto es el producto", newProduct);
+  
+        productsHandler.addProduct(newProduct);
   }
 
 
@@ -63,12 +69,18 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className='mb-3'>
-        <div className='centerText'><Form.Label htmlFor="textInput">Product:</Form.Label></div>
+        <div className='centerText'>
+          <Form.Label 
+            htmlFor="textInput">Product:
+          </Form.Label>
+        </div> 
+        <Form.Label htmlFor="textInput">Nombre:</Form.Label>
         <Form.Control 
         id="textInput"  
-        value={title} 
-        onChange={handleTitleChange} 
+        value={name} 
+        onChange={handleNameChange} 
         placeholder="Add Product" />
+
       </Form.Group>
 
       <Form.Group className="mb-3">
@@ -111,7 +123,7 @@ function FormUpload() {
           <option value={"good"}>Good</option>
           <option value={"satisfactory"}>Satisfactory</option>
         </Form.Select>
-      </Form.Group>
+      </Form.Group> 
 
       <Form.Group className="mb-3">
         <div className='centerText'><Form.Label htmlFor="numberInput">Price:</Form.Label></div>
@@ -126,7 +138,9 @@ function FormUpload() {
       <Button variant="primary" type="submit" id="Send">  
         Send
       </Button>
+
     </Form>
+  
   );
 }
 
