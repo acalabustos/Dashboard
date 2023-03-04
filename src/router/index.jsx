@@ -6,6 +6,7 @@ import NotFound from "../pages/NotFound";
 import { productsHandler } from "../handlers/productsHandler";
 import ProductInfo from "../components/ProductInfo";
 import Root from "./Root";
+import DescriptionProduct from "../Pages/DescriptionProduct";
 
 export const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
                         loader: fetchProducts
                         
                     }, 
+                    {
+                        path: '/DescriptionProduct/:id',
+                        element: <DescriptionProduct />,
+                    },
 
                 ]
             },

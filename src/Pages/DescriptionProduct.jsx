@@ -1,12 +1,20 @@
-import Card from 'react-bootstrap/Card';
-import Product from '../components/Product';
-import { Link, useLoaderData } from "react-router-dom"
+import { useState, useEffect } from "react";
 
+function ProductDetail(props) {
+  const [product, setProduct] = useState(null);
 
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(`https://example.com/api/products${props.productId}`);
+      const data = await response.json();
+      setProduct(data);
+    }
+    fetchData();
+  }, [props.productId]);
 
-function CardProduct() {
   return (
-    <Card style={{ width: '28rem' }}>
+    <>
+       <Card style={{ width: '28rem' }}>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
@@ -18,7 +26,8 @@ function CardProduct() {
         <Card.Link href="#">Compartir</Card.Link>
       </Card.Body>
     </Card>
+    </>
   );
 }
 
-export default CardProduct;
+export default ProductDetail;

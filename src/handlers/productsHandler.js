@@ -8,6 +8,7 @@ export const productsHandler = {
         }
 
         let newProductStructure = {
+            "image": newProduct.image,
             "name": newProduct.name,
             "description": newProduct.description,
             "category": newProduct.category,
