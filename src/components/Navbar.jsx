@@ -15,7 +15,7 @@ import Button from 'react-bootstrap/Button';
 function FirstNav() {
 
   return (
-    <Navbar style={{ backgroundColor: '#24B399' }} bg="light" expand="lg">
+    <Navbar style={{ backgroundColor: '#24B399' }} expand="lg">
 
       <Container fluid>
         <Navbar.Brand  href='/'><img src={Img} /></Navbar.Brand>
