@@ -7,23 +7,30 @@ import Card from 'react-bootstrap/Card';
 
 function ProductInfo() {
 
-    const { product } = useLoaderData();
-    let {name, description, price} = product;
+    const { products } = useLoaderData();
+    //let {product. name, description, category, brand, condition, price}= product;
 
     return (
-
-<Card style={{ width: '28rem' }}>
-      <Card.Body>
-        <Card.Title>name:{name}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Card.Link href="#">More information</Card.Link>
-        <Card.Link href="#">Compartir</Card.Link>
-      </Card.Body>
-    </Card>
+<>
+       {products.map((product) => (
+        <Card key={product.id} className="my-3">
+          <Card.Img variant="top" src={product.image} />
+          <Card.Body>
+            <Card.Title>{product.name}</Card.Title>
+            <Card.Text>{product.description}</Card.Text>
+            <Card.Text>{product.category}</Card.Text>
+            <Card.Text>{product.brand}</Card.Text>
+            <Card.Text>{product.price}</Card.Text>
+            {/* <Card.Link to={`/productInfo/${product.id}`} className="btn btn-outline-primary">
+              More Idbdhenfo
+            </Card.Link> */}
+            <Button variant="primary" href="/productInfo/:id">vfvpefmvpe</Button>
+             <Button variant="primary"  to={"/productInfo/:id"}>More Info</Button> 
+            <Button variant="outline-secondary" className="mx-2">Favorite</Button>
+          </Card.Body>
+        </Card>
+        ))}
+      </>
   );
 
     

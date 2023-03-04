@@ -12,16 +12,16 @@
     {
       "id": 12 ,
       "img":"https://cdn-icons-png.flaticon.com/512/1400/1400329.png" ,
-      "name":"botas",
-      "description":"",
-      "category":"",
-      "brand":"",
-      "condicition":"",
-      "price": ""
+      "name":"Botas",
+      "description":"Marrones de talle alta",
+      "category":"Zapatos",
+      "brand":"El corte ingles",
+      "condicition":"New",
+      "price": "8"
       },
     {
-      "name": "camiseta",
-      "description": "camiseta",
+      "name": "Top",
+      "description": "Color rojo de tirantas",
       "category": "camiseta",
       "brand": "camiseta",
       "condition": "",

@@ -1,6 +1,7 @@
 import { Link, useLoaderData } from "react-router-dom"
 import Product from '../components/Product'
 import { Card, Button } from "react-bootstrap";
+import ProductInfo from "../components/ProductInfo";
 
 
 function ProductList() {
@@ -14,8 +15,11 @@ function ProductList() {
           <Card.Body>
             <Card.Title>{product.name}</Card.Title>
             <Card.Text>{product.description}</Card.Text>
-
-            <Button variant="primary"  to={`products/${product.id}`}>More Info</Button>
+            {/* <Card.Link to={`/productInfo/${product.id}`} className="btn btn-outline-primary">
+              More Idbdhenfo
+            </Card.Link> */}
+            <Button variant="primary" href="/productInfo/:id">vfvpefmvpe</Button>
+             <Button variant="primary"  to={"/productInfo/:id"}>More Info</Button> 
             <Button variant="outline-secondary" className="mx-2">Favorite</Button>
           </Card.Body>
         </Card>
