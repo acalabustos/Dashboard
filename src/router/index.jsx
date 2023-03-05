@@ -37,11 +37,15 @@ export const router = createBrowserRouter([
                         loader: fetchProducts
                         
                     }, 
-                 /*    {
-                        path: '/DescriptionProduct/:id',
+                    {
+                        path: '/DescriptionProduct',
                         element: <DescriptionProduct />,
                     },
- */
+                    {
+                        path: '/Product/:id',
+                        element: <ProductInfo/>,
+                    },
+
                 ]
             },
          

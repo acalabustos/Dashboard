@@ -28,6 +28,7 @@ const filteredProducts = products.filter(product => {
         <label htmlFor="">Search</label>
          <input type="input" onChange={handleSearch} /> 
       </section>
+      
 fAKJFBSKÑJFnFKJn
       {filteredProducts.map((product) => (
         <Card key={product.id} style={{ width: '18rem' }}>

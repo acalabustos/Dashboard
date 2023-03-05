@@ -10,15 +10,15 @@
       "id": 1
     },
     {
-      "id": 12 ,
-      "img":"https://cdn-icons-png.flaticon.com/512/1400/1400329.png" ,
-      "name":"Botas",
-      "description":"Marrones de talle alta",
-      "category":"Zapatos",
-      "brand":"El corte ingles",
-      "condicition":"New",
+      "id": 12,
+      "img": "https://cdn-icons-png.flaticon.com/512/1400/1400329.png",
+      "name": "Botas",
+      "description": "Marrones de talle alta",
+      "category": "Zapatos",
+      "brand": "El corte ingles",
+      "condicition": "New",
       "price": "8"
-      },
+    },
     {
       "name": "Top",
       "description": "Color rojo de tirantas",
@@ -45,43 +45,8 @@
       "condition": "",
       "price": "3",
       "id": 5
-    },
-    {
-      "name": "pantalon",
-      "description": "",
-      "category": "",
-      "brand": "",
-      "condition": "",
-      "price": "",
-      "id": 6
-    },
-    {
-      "name": "pantalon",
-      "description": "camiseta",
-      "category": "",
-      "brand": "",
-      "condition": "",
-      "price": "",
-      "id": 7
-    },
-    {
-      "name": "pantalon",
-      "description": "camiseta",
-      "category": "",
-      "brand": "",
-      "condition": "",
-      "price": "",
-      "id": 8
-    },
-    {
-      "name": "",
-      "description": "",
-      "category": "",
-      "brand": "",
-      "condition": "",
-      "price": "",
-      "id": 9
     }
-    
+   
+   
   ]
 }

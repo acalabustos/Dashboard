@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { productsHandler } from '../handlers/productsHandler';
 import { Form, Button } from 'react-bootstrap';
+import "../Style/Form.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function FormUpload() {
@@ -9,7 +10,6 @@ function FormUpload() {
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
   const [brand, setBrand] = useState('');
-  const [condition, setCondition] = useState('');
   const [price, setPrice] = useState('');
 
   const handleImageChange = (e) => {
@@ -36,26 +36,25 @@ function FormUpload() {
   const handleBrandChange = (event) => {
     setBrand(event.target.value);
   };
-  /*  const handleConditionChange = (event) => {
-    setCondition(event.target.value);
-  };  */
+
   const handlePriceChange = (event) => {
     setPrice(event.target.value);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = {name, description, category, brand, price};
-    console.log("esto es el producto", newProduct);
+    let newProduct = {name, description, category, brand, condition, price};
   
         productsHandler.addProduct(newProduct);
   }
 
 
   return (
+    
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Label>Image:</Form.Label>
-        <Form.Control
+        <div className='centerText'><Form.Label>Upload Image:</Form.Label></div>
+        <Form.Control 
+          id="StyleControl"
           type="file"
           accept="image/*"
           onChange={(e) => handleImageChange(e)}
@@ -66,7 +65,12 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className='mb-3'>
-        <Form.Label htmlFor="textInput">Nombre:</Form.Label>
+        <div className='centerText'>
+          <Form.Label 
+            htmlFor="textInput">Product:
+          </Form.Label>
+        </div> 
+       
         <Form.Control 
         id="textInput"  
         value={name} 
@@ -76,7 +80,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Email:</Form.Label>
+       <div className='centerText'><Form.Label htmlFor="textInput">Description:</Form.Label></div>
         <Form.Control 
         id="textInput" 
         value={description} 
@@ -85,7 +89,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Pregunta:</Form.Label>
+        <div className='centerText'><Form.Label id="StyleLabel" htmlFor="textInput">Category:</Form.Label></div>
         <Form.Control 
         id="textInput" 
         value={category} 
@@ -94,7 +98,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Brand:</Form.Label>
+        <div className='centerText'><Form.Label htmlFor="textInput">Brand:</Form.Label></div>
         <Form.Control 
         id="textInput" 
         value={brand} 
@@ -102,23 +106,9 @@ function FormUpload() {
         placeholder="Add brand" />
       </Form.Group>
 
-     {/*  <Form.Group className="mb-3">
-        <Form.Label htmlFor="select">Condition:</Form.Label>
-        <Form.Select 
-        id="select"
-        name= "condition"
-        value={condition}
-        onChange={handleConditionChange}>
-        <option>Select option</option>
-          <option value={"new"}>New</option>
-          <option value={"nearly new"}>Nearly new</option>
-          <option value={"good"}>Good</option>
-          <option value={"satisfactory"}>Satisfactory</option>
-        </Form.Select>
-      </Form.Group> 
- */}
+
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="numberInput">Price:</Form.Label>
+        <div className='centerText'><Form.Label htmlFor="numberInput">Price:</Form.Label></div>
         <Form.Control 
         id="numberInput" 
         value={price}
@@ -126,12 +116,11 @@ function FormUpload() {
         onChange={handlePriceChange}
         placeholder="Add price" />
       </Form.Group>
-
-
-{      <Button variant="primary"  href="/ProductList">
+      
+      <Button variant="primary" type="submit" id="Send">  
         Send
       </Button>
-}
+
     </Form>
   
   );
