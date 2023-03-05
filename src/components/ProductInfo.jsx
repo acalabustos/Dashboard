@@ -12,7 +12,6 @@ function ProductInfo() {
 
     return (
 <>
-       {products.map((product) => (
         <Card key={product.id} className="my-3">
           <Card.Img variant="top" src={product.image} />
           <Card.Body>
@@ -29,7 +28,7 @@ function ProductInfo() {
             <Button variant="outline-secondary" className="mx-2">Favorite</Button>
           </Card.Body>
         </Card>
-        ))}
+        
       </>
   );
 
