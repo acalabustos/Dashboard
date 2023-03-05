@@ -54,6 +54,33 @@
       "condition": "",
       "price": "",
       "id": 6
+    },
+    {
+      "name": "pantalon",
+      "description": "camiseta",
+      "category": "",
+      "brand": "",
+      "condition": "",
+      "price": "",
+      "id": 7
+    },
+    {
+      "name": "pantalon",
+      "description": "camiseta",
+      "category": "",
+      "brand": "",
+      "condition": "",
+      "price": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "description": "",
+      "category": "",
+      "brand": "",
+      "condition": "",
+      "price": "",
+      "id": 9
     }
     
   ]

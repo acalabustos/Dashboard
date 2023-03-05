@@ -8,7 +8,7 @@ import Card from 'react-bootstrap/Card';
 function ProductInfo() {
 
     const { products } = useLoaderData();
-    //let {product. name, description, category, brand, condition, price}= product;
+    //let {product. name, description, category, brand, cogit ndition, price}= product;
 
     return (
 <>
