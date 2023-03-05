@@ -1,5 +1,6 @@
 import { productService } from "../../services/productService";      
 
+
 export const productsHandler = {
     addProduct(newProduct){
         if (!newProduct) {
@@ -7,16 +8,15 @@ export const productsHandler = {
         }
 
         let newProductStructure = {
-            "id": "" , 
             "image": newProduct.image,
             "name": newProduct.name,
             "description": newProduct.description,
             "category": newProduct.category,
-            "brand":newProduct.brand,
-            "condicition":newProduct.condition,
+            "brand": newProduct.brand,
+            "condition": newProduct.condition,
             "price": newProduct.price,
         }
-
+console.log("esto es el nuevo prduct", newProductStructure);
         return productService.submitProduct(newProductStructure);   
     },
 
@@ -25,7 +25,7 @@ export const productsHandler = {
     },
 
     loadProduct(id){
-        return productService.getProducts(id);
+        return productService.getProduct(id);
 
 },
 deleteProduct(id){
@@ -37,7 +37,7 @@ updateProduct(id, updatedProduct){
     }
 
     let updatedProductStructure = {
-        "name": updatedProduct.name,
+        "name": updatedProduct.title,
         "description": updatedProduct.description,
         "category": updatedProduct.category,
         "brand":updatedProduct.brand,

@@ -1,31 +1,38 @@
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+/*import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit'; */
+import { Link } from 'react-router-dom';
+import { productsHandler } from '../handlers/productsHandler';
 
-function Product({ product }) {
+function Product({ product, deleteProduct }) {
 
-    const { previewImage, name, description, category, brand, condition, price } = product;
+    const { id, image, name, price } = product;
 
-  return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={previewImage} />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>
-        {description}
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>{category}</ListGroup.Item>
-        <ListGroup.Item>{brand}</ListGroup.Item>
-        <ListGroup.Item>{condition}</ListGroup.Item>
-        <ListGroup.Item>{price}</ListGroup.Item>
-      </ListGroup>
-      <Card.Body>
-      <Card.Link to="/CreateProduct/id" className="btn btn-outline-primary">Edgeetgegit</Card.Link>
-      <Card.Link to="/CreateProduct/id" className="btn btn-outline-primary">Delete</Card.Link>
-      </Card.Body>
-    </Card>
-  );
+    return (
+       
+        <Card className="my-3">
+        <Card.Img variant="top" src={image} />
+        <Card.Body>
+          {<Card.Title>{name}</Card.Title>}
+          <Card.Text>{price}</Card.Text>
+        {/*   <Card.Link to={`/productInfo/${product.id}`} className="btn btn-outline-primary">
+            More Idbdhenfo
+          </Card.Link> */}
+           <Button onClick={() => deleteProduct(id)}>Delete</Button>
+           <Card.Link to={`/editProduct/${product.id}`}>
+              <Button>Edit</Button>
+          </Card.Link>
+          <Card.Link to={`/products/${product.id}`}>
+          <Button>More Info</Button>
+          </Card.Link>
+
+           {/*<Button variant="primary"  to={"/productInfo/:id"}>More Info</Button> 
+          <Button variant="outline-secondary" className="mx-2">Favorite</Button> */}
+        </Card.Body>
+      </Card>
+
+
+)
 }
 
-export default Product;
+export default Product
+

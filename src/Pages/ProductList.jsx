@@ -1,58 +1,26 @@
-import { useLoaderData } from "react-router-dom";
-import { useState } from "react";
-import { productsHandler } from "../handlers/productsHandler";
-import Product from '../components/Product';
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-import '../Style/ProductList.css';
+import { Link, useLoaderData } from "react-router-dom"
+import Product from '../components/Product'
+import { Card, Button } from "react-bootstrap";
+import ProductInfo from "../components/ProductInfo";
+import DescriptionProduct from "../Pages/DescriptionProduct";
 
 function ProductList() {
-  const { products } = useLoaderData();
-  const [searchValue, setSearchValue] = useState('');
-
- 
-  const deleteProduct = async (productId) => {
-    await productsHandler.deleteProduct(productId);
-    const updatedProducts = products.filter(product => product.id !== productId);
-    setProducts(updatedProducts);
-  }
-
-  const filteredProducts = products.filter(product => {
-    return product.name.toLowerCase().includes(searchValue.toLowerCase());
-  });
-
-  return (
-    <>
-      <section className="filter">
-        <label htmlFor="">Search</label>
-        {/* <input type="input" onChange={handleSearch} /> */}
-      </section>
-
-      {filteredProducts.map((product) => (
-        <Card key={product.id} style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={product.previewImage} />
+    const { products } = useLoaderData();
+    console.log(products)
+    return (
+        <>
+       {products.map((product) => (
+        <Card key={product.id} className="my-3">
           <Card.Body>
             <Card.Title>{product.name}</Card.Title>
-          </Card.Body>
-          <ListGroup className="list-group-flush">
-            <ListGroup.Item>{product.price}</ListGroup.Item>
-          </ListGroup>
-          <Card.Body>
-            <Card.Link to={`/products/${product.id}`} className="btn btn-outline-primary">
-              More Info
-            </Card.Link>
-          </Card.Body>
-          <Card.Body>
-            <Product
-              product={product}
-              deleteProduct={() => deleteProduct(product.id)}
-            />
+            <Card.Text>{product.description}</Card.Text>
+
+            <Button variant="primary" href="/ProductInfo/:id"> More info</Button>
+            <Button variant="outline-secondary" className="mx-2">Favorite</Button>
           </Card.Body>
         </Card>
-      ))}
-    </>
-  );
+        ))}
+      </>
+    )
 }
-
 export default ProductList;
-

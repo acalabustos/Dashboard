@@ -1,14 +1,15 @@
-import { useLoaderData } from "react-router-dom";
-import Product from '../components/Product';
+import { useState, useEffect } from "react";
+import ProductInfo from "../components/ProductInfo";
 
 
-function CardProduct() {
-  const { product } = useLoaderData();
-  let {name, description, category, brand, condition, price}= product;
+function ProductDetail() {
+
 
   return (
-    <Product/>
+    <>
+      <ProductInfo></ProductInfo>
+    </>
   );
 }
 
-export default CardProduct;
+export default ProductDetail;

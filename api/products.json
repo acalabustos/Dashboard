@@ -1,45 +1,52 @@
-
 {
-    "products": [
+  "products": [
     {
-    "id": 1 ,
-    "img":"https://cdn-icons-png.flaticon.com/512/1400/1400329.png" ,
-    "name":"botas",
-    "description":"",
-    "category":"",
-    "brand":"",
-    "condicition":"",
-    "price": ""
+      "name": "Camiseta Nike",
+      "description":"Marrones de talle alta",
+      "category": "Camiseta",
+      "brand": "Nike",
+      "condition": "Buena",
+      "price": "10",
+      "id": 1
     },
     {
-    "id": 2 ,
-    "img":"" ,
-    "name":"camiseta",
-    "description":"gtegtg",
-    "category":"",
-    "brand":"",
-    "condition":"",
-    "price": ""
+      "id": 12,
+      "img": "https://cdn-icons-png.flaticon.com/512/1400/1400329.png",
+      "name": "Botas",
+      "description": "Marrones de talle alta",
+      "category": "Zapatos",
+      "brand": "El corte ingles",
+      "condicition": "New",
+      "price": "8"
     },
     {
-        "id": 3 ,
-        "name":"camiseta",
-        "description":"hahah",
-        "category":"sss",
-        "brand":"sss",
-        "condition":"",
-        "price": ""
-        },
-        {
-            "id": 4 ,
-            "name":"camiseta",
-            "description":"hhgg",
-            "category":"ssss",
-            "brand":"ssss",
-            "condition":"sss",
-            "price": "sss"
-            }
-      
-]
-
+      "name": "Top",
+      "description": "Color rojo de tirantas",
+      "category": "camiseta",
+      "brand": "camiseta",
+      "condition": "",
+      "price": "3",
+      "id": 3
+    },
+    {
+      "name": "camiseta",
+      "description": "camiseta",
+      "category": "camiseta",
+      "brand": "camiseta",
+      "condition": "",
+      "price": "3",
+      "id": 4
+    },
+    {
+      "name": "camiseta",
+      "description": "camiseta",
+      "category": "camiseta",
+      "brand": "camiseta",
+      "condition": "",
+      "price": "3",
+      "id": 5
+    }
+   
+   
+  ]
 }
