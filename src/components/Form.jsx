@@ -44,7 +44,7 @@ function FormUpload() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = {name, description, category, brand, condition, price};
+    let newProduct = {name, description, category, brand, price};
     console.log("esto es el producto", newProduct);
   
         productsHandler.addProduct(newProduct);

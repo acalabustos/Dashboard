@@ -21,13 +21,13 @@ export const productService = {
 },
 
   async getProduct(id) {
-      let response = await apiClient.get("products/" + id);
+      let response = await apiClient.get("/products/" + id);
       let product = response.data;
       return product;
   },
 
   async deleteProduct(id){
-      await apiClient.delete("products/" + id)
+      await apiClient.delete("/products/" + id)
   },
   async updateProduct(id, updatedProduct){
       await apiClient.patch("/products/" + id, updatedProduct)

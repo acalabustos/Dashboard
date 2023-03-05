@@ -18,7 +18,7 @@ function ProductList() {
             {/* <Card.Link to={`/productInfo/${product.id}`} className="btn btn-outline-primary">
               More Idbdhenfo
             </Card.Link> */}
-            <Button variant="primary" href="/productInfo/:id">vfvpefmvpe</Button>
+            <Button href="/ProductInfo/:id">vfvpefmvpe</Button>
              <Button variant="primary"  to={"/productInfo/:id"}>More Info</Button> 
             <Button variant="outline-secondary" className="mx-2">Favorite</Button>
           </Card.Body>

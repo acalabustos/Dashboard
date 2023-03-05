@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
+import { Button } from 'react-bootstrap';
 
 
 
@@ -7,26 +8,26 @@ import Card from 'react-bootstrap/Card';
 
 function ProductInfo() {
 
-    const { products } = useLoaderData();
-    //let {product. name, description, category, brand, cogit ndition, price}= product;
+    const { product } = useLoaderData();
+    //let {name, description, category, brand, condition, price}= product;
 
     return (
 <>
-       {products.map((product) => (
+       {product.map((product) => (
         <Card key={product.id} className="my-3">
           <Card.Img variant="top" src={product.image} />
           <Card.Body>
-            <Card.Title>{product.name}</Card.Title>
+            {<Card.Title>{product.name}</Card.Title>}
             <Card.Text>{product.description}</Card.Text>
             <Card.Text>{product.category}</Card.Text>
             <Card.Text>{product.brand}</Card.Text>
             <Card.Text>{product.price}</Card.Text>
-            {/* <Card.Link to={`/productInfo/${product.id}`} className="btn btn-outline-primary">
+          {/*   <Card.Link to={`/productInfo/${product.id}`} className="btn btn-outline-primary">
               More Idbdhenfo
             </Card.Link> */}
-            <Button variant="primary" href="/productInfo/:id">vfvpefmvpe</Button>
-             <Button variant="primary"  to={"/productInfo/:id"}>More Info</Button> 
-            <Button variant="outline-secondary" className="mx-2">Favorite</Button>
+             <Button variant="primary" href="">Delete</Button>
+             {/*<Button variant="primary"  to={"/productInfo/:id"}>More Info</Button> 
+            <Button variant="outline-secondary" className="mx-2">Favorite</Button> */}
           </Card.Body>
         </Card>
         ))}
