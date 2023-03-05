@@ -54,8 +54,8 @@ function FirstNav() {
              <FiMail />
             </IconContext.Provider>
           </div>
-
-          <Nav.Link className='Links' href="/DescriptionProduct">Description</Nav.Link>      
+          <Nav.Link className='Links' href="/ProductList">My products</Nav.Link>
+              
                     
         </Navbar.Collapse>            
            

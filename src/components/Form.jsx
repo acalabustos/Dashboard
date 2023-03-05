@@ -10,7 +10,6 @@ function FormUpload() {
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
   const [brand, setBrand] = useState('');
-  const [condition, setCondition] = useState('');
   const [price, setPrice] = useState('');
 
   const handleImageChange = (e) => {
@@ -37,16 +36,13 @@ function FormUpload() {
   const handleBrandChange = (event) => {
     setBrand(event.target.value);
   };
-  /*  const handleConditionChange = (event) => {
-    setCondition(event.target.value);
-  };  */
+
   const handlePriceChange = (event) => {
     setPrice(event.target.value);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
     let newProduct = {name, description, category, brand, condition, price};
-    console.log("esto es el producto", newProduct);
   
         productsHandler.addProduct(newProduct);
   }
@@ -110,23 +106,7 @@ function FormUpload() {
         placeholder="Add brand" />
       </Form.Group>
 
-     {/*  <Form.Group className="mb-3">
-        <Form.Label htmlFor="select">Condition:</Form.Label>
-      <Form.Group className="mb-3">
-        <div className='centerText'><Form.Label htmlFor="select">Condition:</Form.Label></div>
-        <Form.Select 
-        id="select"
-        name= "condition"
-        value={condition}
-        onChange={handleConditionChange}>
-        <option>Select option</option>
-          <option value={"new"}>New</option>
-          <option value={"nearly new"}>Nearly new</option>
-          <option value={"good"}>Good</option>
-          <option value={"satisfactory"}>Satisfactory</option>
-        </Form.Select>
-      </Form.Group> 
- */}
+
       <Form.Group className="mb-3">
         <div className='centerText'><Form.Label htmlFor="numberInput">Price:</Form.Label></div>
         <Form.Control 

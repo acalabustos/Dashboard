@@ -19,9 +19,7 @@ function ProductInfo() {
             <Card.Text>{product.price}</Card.Text>
             {/* <Card.Link to={`/productInfo/${product.id}`} className="btn btn-outline-primary">
               More Idbdhenfo
-            </Card.Link> */}
-             <Button variant="primary" href={`/Product/:id`}>More Info</Button>
-             <Button variant="primary"  to={"/productInfo/:id"}>More Info</Button> 
+            </Card.Link> */} 
             <Button variant="outline-secondary" className="mx-2">Favorite</Button>
           </Card.Body>
         </Card>
