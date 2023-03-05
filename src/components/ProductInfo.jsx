@@ -1,19 +1,16 @@
 import { useLoaderData } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
-
-
-
+import { Button } from "react-bootstrap";
 
 
 function ProductInfo() {
 
-    const { products } = useLoaderData();
-    //let {product. name, description, category, brand, cogit ndition, price}= product;
+    const { product } = useLoaderData();
 
     return (
 <>
         <Card key={product.id} className="my-3">
-          <Card.Img variant="top" src={product.image} />
+          {/* <Card.Img variant="top" src={product.image} /> */}
           <Card.Body>
             <Card.Title>{product.name}</Card.Title>
             <Card.Text>{product.description}</Card.Text>
@@ -23,7 +20,7 @@ function ProductInfo() {
             {/* <Card.Link to={`/productInfo/${product.id}`} className="btn btn-outline-primary">
               More Idbdhenfo
             </Card.Link> */}
-            <Button variant="primary" href="/productInfo/:id">vfvpefmvpe</Button>
+             <Button variant="primary" href={`/Product/:id`}>More Info</Button>
              <Button variant="primary"  to={"/productInfo/:id"}>More Info</Button> 
             <Button variant="outline-secondary" className="mx-2">Favorite</Button>
           </Card.Body>
