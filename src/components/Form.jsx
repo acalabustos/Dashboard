@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { productsHandler } from '../handlers/productsHandler';
 import { Form, Button } from 'react-bootstrap';
+import "../Style/Form.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function FormUpload() {
@@ -52,10 +53,12 @@ function FormUpload() {
 
 
   return (
+    
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Label>Image:</Form.Label>
-        <Form.Control
+        <div className='centerText'><Form.Label>Upload Image:</Form.Label></div>
+        <Form.Control 
+          id="StyleControl"
           type="file"
           accept="image/*"
           onChange={(e) => handleImageChange(e)}
@@ -66,7 +69,12 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className='mb-3'>
-        <Form.Label htmlFor="textInput">Nombre:</Form.Label>
+        <div className='centerText'>
+          <Form.Label 
+            htmlFor="textInput">Product:
+          </Form.Label>
+        </div> 
+       
         <Form.Control 
         id="textInput"  
         value={name} 
@@ -76,7 +84,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Email:</Form.Label>
+       <div className='centerText'><Form.Label htmlFor="textInput">Description:</Form.Label></div>
         <Form.Control 
         id="textInput" 
         value={description} 
@@ -85,7 +93,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Pregunta:</Form.Label>
+        <div className='centerText'><Form.Label id="StyleLabel" htmlFor="textInput">Category:</Form.Label></div>
         <Form.Control 
         id="textInput" 
         value={category} 
@@ -94,7 +102,7 @@ function FormUpload() {
       </Form.Group>
 
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="textInput">Brand:</Form.Label>
+        <div className='centerText'><Form.Label htmlFor="textInput">Brand:</Form.Label></div>
         <Form.Control 
         id="textInput" 
         value={brand} 
@@ -104,6 +112,8 @@ function FormUpload() {
 
      {/*  <Form.Group className="mb-3">
         <Form.Label htmlFor="select">Condition:</Form.Label>
+      <Form.Group className="mb-3">
+        <div className='centerText'><Form.Label htmlFor="select">Condition:</Form.Label></div>
         <Form.Select 
         id="select"
         name= "condition"
@@ -118,7 +128,7 @@ function FormUpload() {
       </Form.Group> 
  */}
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="numberInput">Price:</Form.Label>
+        <div className='centerText'><Form.Label htmlFor="numberInput">Price:</Form.Label></div>
         <Form.Control 
         id="numberInput" 
         value={price}
@@ -126,12 +136,11 @@ function FormUpload() {
         onChange={handlePriceChange}
         placeholder="Add price" />
       </Form.Group>
-
-
-{      <Button variant="primary"  href="/ProductList">
+      
+      <Button variant="primary" type="submit" id="Send">  
         Send
       </Button>
-}
+
     </Form>
   
   );

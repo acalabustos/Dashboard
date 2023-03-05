@@ -2,4 +2,32 @@
 img{
   width: 12rem;
   height: 3rem;
-  } 
+  }
+
+.navbar {
+  background-color: #24B399 !important; 
+  font-family: 'lobster Two';
+  margin-bottom: 5%;
+  padding-right: 4%;
+  padding-left: 3%;
+}
+
+form{
+ margin-top: 0;
+
+}
+
+.StyleIcons{
+  margin-right: 3%;
+}
+
+.Links{
+  margin-right: 8%;
+  margin-left: 8%;
+}
+
+/* @media (max-width: 768px) {
+  .StyleIcons:last-child {
+    display: none;
+  }
+} */

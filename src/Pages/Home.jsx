@@ -5,15 +5,16 @@ import Accordion from '../components/Accordion';
 import Carousel from '../components/Carousel';
 
 function Home() {
+
     return (
         <div>
             <Container fluid>
                 <div className="prueba">
                     <Row>
 
-                        <h1>Buy and sell second-hand goods</h1>
-                        <p>Here I am! Just look for me</p>
-                        <Carousel/>
+                    <h1>Buy and sell second-hand goods</h1>
+                    
+                        <Carousel></Carousel>
 
                         <Accordion defaultActiveKey="3">
                     
