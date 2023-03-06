@@ -24,9 +24,8 @@ function ProductInfo() {
           <Card.Text>{product.category}</Card.Text>
           <Card.Text>{product.brand}</Card.Text>
           <Card.Text>{product.price}€</Card.Text>
-          <Button variant="primary" href="/productInfo/:id">vfvpefmvpe</Button>
-           <Button variant="primary"  to={"/productInfo/:id"}>More Info</Button>  
-          <Button variant="outline-secondary" className="mx-2">Favorite</Button>
+        <Button variant="primary" href="/productInfo/:id">Favorite</Button>
+
         </Card.Body>
       </Card>
       ))}
