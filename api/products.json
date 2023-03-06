@@ -2,7 +2,7 @@
   "products": [
     {
       "name": "Camiseta Deportiva",
-      "description":"",
+      "description": "",
       "category": "Camiseta",
       "brand": "Nike",
       "condition": "Buena",
@@ -44,8 +44,22 @@
       "condition": "",
       "price": "30",
       "id": 5
+    },
+    {
+      "name": "gorra",
+      "description": "purpur",
+      "category": "",
+      "brand": "",
+      "price": "",
+      "id": 13
+    },
+    {
+      "name": "sombrero",
+      "description": "",
+      "category": "",
+      "brand": "",
+      "price": "",
+      "id": 14
     }
-   
-   
   ]
 }

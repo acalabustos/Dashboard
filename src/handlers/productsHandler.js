@@ -13,7 +13,6 @@ export const productsHandler = {
             "description": newProduct.description,
             "category": newProduct.category,
             "brand": newProduct.brand,
-            "condition": newProduct.condition,
             "price": newProduct.price,
         }
 console.log("esto es el nuevo prduct", newProductStructure);
@@ -41,7 +40,6 @@ updateProduct(id, updatedProduct){
         "description": updatedProduct.description,
         "category": updatedProduct.category,
         "brand":updatedProduct.brand,
-        "condicition":updatedProduct.condition,
         "price": updatedProduct.price,
         "image": updatedProduct.image
     }

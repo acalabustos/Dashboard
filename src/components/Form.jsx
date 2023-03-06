@@ -42,7 +42,7 @@ function FormUpload() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = { name, description, category, brand, condition, price };
+    let newProduct = { name, description, category, brand, price };
 
     productsHandler.addProduct(newProduct);
   }
