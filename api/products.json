@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "name": "Camiseta Nike",
-      "description":"Marrones de talle alta",
+      "name": "Camiseta Deportiva",
+      "description":"",
       "category": "Camiseta",
       "brand": "Nike",
       "condition": "Buena",
@@ -13,7 +13,7 @@
       "id": 12,
       "img": "https://cdn-icons-png.flaticon.com/512/1400/1400329.png",
       "name": "Botas",
-      "description": "Marrones de talle alta",
+      "description": "Marrones de talla alta",
       "category": "Zapatos",
       "brand": "El corte ingles",
       "condicition": "New",
@@ -22,28 +22,28 @@
     {
       "name": "Top",
       "description": "Color rojo de tirantas",
-      "category": "camiseta",
-      "brand": "camiseta",
+      "category": "Camiseta",
+      "brand": "Berska",
       "condition": "",
       "price": "3",
       "id": 3
     },
     {
-      "name": "camiseta",
-      "description": "camiseta",
-      "category": "camiseta",
-      "brand": "camiseta",
+      "name": "Chandals",
+      "description": "Chandals casual verde y azul",
+      "category": "Ropa deportiva",
+      "brand": "Adidas",
       "condition": "",
       "price": "3",
       "id": 4
     },
     {
-      "name": "camiseta",
-      "description": "camiseta",
-      "category": "camiseta",
-      "brand": "camiseta",
+      "name": "Pulsera",
+      "description": "Pulsera de color plata",
+      "category": "Joyas",
+      "brand": "Tous",
       "condition": "",
-      "price": "3",
+      "price": "30",
       "id": 5
     }
    
