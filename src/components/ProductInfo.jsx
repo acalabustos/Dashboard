@@ -25,7 +25,8 @@ function ProductInfo() {
           <Card.Text>{product.brand}</Card.Text>
           <Card.Text>{product.price}€</Card.Text>
         <Button variant="primary" href="/productInfo/:id">Favorite</Button>
-
+        <Button variant="primary" href="/productInfo/:id">Edit</Button>
+        <Button variant="primary" href="/productInfo/:id">Delete</Button>
         </Card.Body>
       </Card>
       ))}
