@@ -8,18 +8,18 @@ const NotFound = () => {
 
     return (
         <Alert variant="danger" className="text-center">
-        <Alert.Heading>404</Alert.Heading>
-        <p>Page not found</p>
-        <p>{error.statusText || error.message}</p>
-        <hr />
-        
-        <div className="d-flex justify-content-center">
-            <Link to="/" className="btn btn-primary">
-              <Button>Volver al Home</Button>  
-            </Link>
-           
-        </div>
-    </Alert>
+            <Alert.Heading>404</Alert.Heading>
+            <p>Page not found</p>
+            <p>{error.statusText || error.message}</p>
+            <hr />
+
+            <div className="d-flex justify-content-center">
+                <Link to="/" className="btn btn-primary">
+                    <Button>Volver al Home</Button>
+                </Link>
+
+            </div>
+        </Alert>
     );
 };
 export default NotFound;

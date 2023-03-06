@@ -6,7 +6,7 @@ function CreateProduct() {
   return (
     <div>
       <Container fluid>
-       <Form></Form>
+        <Form></Form>
       </Container>
     </div>
   );

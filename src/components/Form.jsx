@@ -42,18 +42,18 @@ function FormUpload() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = {name, description, category, brand, condition, price};
-  
-        productsHandler.addProduct(newProduct);
+    let newProduct = { name, description, category, brand, condition, price };
+
+    productsHandler.addProduct(newProduct);
   }
 
 
   return (
-    
+
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
         <div className='centerText'><Form.Label>Upload Image:</Form.Label></div>
-        <Form.Control 
+        <Form.Control
           id="StyleControl"
           type="file"
           accept="image/*"
@@ -66,63 +66,63 @@ function FormUpload() {
 
       <Form.Group className='mb-3'>
         <div className='centerText'>
-          <Form.Label 
+          <Form.Label
             htmlFor="textInput">Product:
           </Form.Label>
-        </div> 
-       
-        <Form.Control 
-        id="textInput"  
-        value={name} 
-        onChange={handleNameChange} 
-        placeholder="Add Product" />
+        </div>
+
+        <Form.Control
+          id="textInput"
+          value={name}
+          onChange={handleNameChange}
+          placeholder="Add Product" />
 
       </Form.Group>
 
       <Form.Group className="mb-3">
-       <div className='centerText'><Form.Label htmlFor="textInput">Description:</Form.Label></div>
-        <Form.Control 
-        id="textInput" 
-        value={description} 
-        onChange={handleDescriptionChange}
-        placeholder="Add description" />
+        <div className='centerText'><Form.Label htmlFor="textInput">Description:</Form.Label></div>
+        <Form.Control
+          id="textInput"
+          value={description}
+          onChange={handleDescriptionChange}
+          placeholder="Add description" />
       </Form.Group>
 
       <Form.Group className="mb-3">
         <div className='centerText'><Form.Label id="StyleLabel" htmlFor="textInput">Category:</Form.Label></div>
-        <Form.Control 
-        id="textInput" 
-        value={category} 
-        onChange={handleCategoryChange}
-        placeholder="Add category" />
+        <Form.Control
+          id="textInput"
+          value={category}
+          onChange={handleCategoryChange}
+          placeholder="Add category" />
       </Form.Group>
 
       <Form.Group className="mb-3">
         <div className='centerText'><Form.Label htmlFor="textInput">Brand:</Form.Label></div>
-        <Form.Control 
-        id="textInput" 
-        value={brand} 
-        onChange={handleBrandChange}
-        placeholder="Add brand" />
+        <Form.Control
+          id="textInput"
+          value={brand}
+          onChange={handleBrandChange}
+          placeholder="Add brand" />
       </Form.Group>
 
 
       <Form.Group className="mb-3">
         <div className='centerText'><Form.Label htmlFor="numberInput">Price:</Form.Label></div>
-        <Form.Control 
-        id="numberInput" 
-        value={price}
-        pattern="[0-9,.]*"
-        onChange={handlePriceChange}
-        placeholder="Add price" />
+        <Form.Control
+          id="numberInput"
+          value={price}
+          pattern="[0-9,.]*"
+          onChange={handlePriceChange}
+          placeholder="Add price" />
       </Form.Group>
-      
-      <Button variant="primary" type="submit" id="Send">  
+
+      <Button variant="primary" type="submit" id="Send">
         Send
       </Button>
 
     </Form>
-  
+
   );
 }
 
