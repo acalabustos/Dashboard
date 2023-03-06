@@ -32,12 +32,12 @@ Nosotras ofrecemos como proyecto escalable:
 | Name | Role | GitHub |
 | :--- | :---: | :---: | 
 | Mey Gimenez |  Scrum Master | https://github.com/MeryGF | 
-| Aihnoa Cala | Product Owner | https://github.com/acalabustos | 
+| Ainhoa Cala | Product Owner | https://github.com/acalabustos | 
 | Angy Flores  | Developer | https://github.com/Anyi79| 
 | Nohely Rosales | Developer |https://github.com/Nohee22 | 
 | Diana Romero | Developer| https://github.com/Diancris| 
 
-<h2>5. Final Design</h2> 
+<h2>3. Final Design</h2> 
 <div style="heigth:auto; display:flex; flex-wrap:wrap; justify-content:center; padding:1rem">
 
 ![Mockup (1)](https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/carrusel.jpg)
@@ -47,7 +47,7 @@ Nosotras ofrecemos como proyecto escalable:
 </div>
 
 
-<h2>6. Stacks</h2>
+<h2>4. Stacks</h2>
 <ul>
 <li>React</li>
 <li>CSS</li>
@@ -59,7 +59,7 @@ Nosotras ofrecemos como proyecto escalable:
 
 ***
 
-<h2>7. Methodology:</h2>
+<h2>5. Methodology:</h2>
 <ul>
 <li>Mob programming.</li>
 <li>Pair programming.</li>
