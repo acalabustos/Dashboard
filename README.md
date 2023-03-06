@@ -52,7 +52,7 @@ Nosotras ofrecemos como proyecto escalable:
 <li>React</li>
 <li>CSS</li>
 <li>J.Son</li>
-<li>React Boostrap</li>
+<li>React Bootstrap</li>
 <li>Figma</li>
 </ul>
 
