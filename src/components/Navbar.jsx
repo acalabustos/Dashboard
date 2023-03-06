@@ -36,12 +36,11 @@ function FirstNav() {
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll
-          >         
+          >    
+               
           </Nav>
           
-          <Nav.Link href="#action1">
-           
-          </Nav.Link> 
+          <Nav.Link className='Links' href="/ProductList">My products</Nav.Link>
           
           <div className='StyleIcons'>
             <IconContext.Provider value={{ color: '#f2cc49', size: '2em' }}>
@@ -50,11 +49,15 @@ function FirstNav() {
           </div>
 
           <div>
+            
             <IconContext.Provider value={{ color: '#f2cc49', size: '2em' }}>
              <FiMail />
             </IconContext.Provider>
+          
           </div>
-          <Nav.Link className='Links' href="/ProductList">My products</Nav.Link>
+
+          
+          
               
                     
         </Navbar.Collapse>            
