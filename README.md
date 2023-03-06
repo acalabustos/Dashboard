@@ -25,26 +25,25 @@ Nosotras ofrecemos como proyecto escalable:
 1. Un marketplace en el que el objetivo será crear una comunidad concienciada con el medio ambiente, y la reutilización de productos.
 2. Una plataforma dirigida al aprovechamiento de recursos y útil para cualquier usuario. 
 
-![73322dd86f7b8e28e2b70142a3c954e9](https://user-images.githubusercontent.com/114645883/221011982-27967cc4-1387-4987-aad3-806f5d47c519.png)
+![73322dd86f7b8e28e2b70142a3c954e9](https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/C.jpg)
 
 ## 2. Team Members
 
 | Name | Role | GitHub |
 | :--- | :---: | :---: | 
-| Mey Gimenez |  Scrum Master | https://github.com/Judit-Calvet | 
+| Mey Gimenez |  Scrum Master | https://github.com/MeryGF | 
 | Aihnoa Cala | Product Owner | https://github.com/acalabustos | 
-| Angy Flores  | Developer | https://github.com/Holapueblodev | 
-| Nohely Rosales | Developer | https://github.com/anadelccc | 
-| Diana Romero | Developer| https://github.com/georgette949 | 
+| Angy Flores  | Developer | https://github.com/Anyi79| 
+| Nohely Rosales | Developer |https://github.com/Nohee22 | 
+| Diana Romero | Developer| https://github.com/Diancris| 
 
 <h2>5. Final Design</h2> 
 <div style="heigth:auto; display:flex; flex-wrap:wrap; justify-content:center; padding:1rem">
 
-![Mockup (1)]
-(https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/carrusel.jpg)
-(https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/card%20amarilla.jpg)
-(https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/formulario.jpg)
-(https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/card%20up.jpg)
+![Mockup (1)](https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/carrusel.jpg)
+![Mockup (2)](https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/card%20amarilla.jpg)
+![Mockup (3)](https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/formulario.jpg)
+![Mockup (4)](https://github.com/acalabustos/Dashboard/blob/e53f97006b4de9baa1fa0df75920473efb121763/src/Img/card%20up.jpg)
 </div>
 
 
