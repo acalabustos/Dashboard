@@ -25,10 +25,10 @@ export const router = createBrowserRouter([
                         path: '/CreateProduct',
                         element: <CreateProduct />,
                     },
-                    {
-                        path: "/ProductInfo/:id",
+                   {
+                        path: "/productInfo",
                         element: <ProductInfo />,
-                        loader: fetchProduct
+                        loader: fetchProducts
                         
                     },    
                     {
@@ -41,12 +41,12 @@ export const router = createBrowserRouter([
                         path: '/DescriptionProduct',
                         element: <DescriptionProduct />,
                     },
-                    {
-                        path: '/Product/:id',
+                 /*    {
+                        path:'/ProductInfo/:id',
                         element: <ProductInfo/>,
-                        loader: fetchProducts
+                        loader: fetchProduct
                     },
-
+ */
                 ]
             },
          
