@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+/* import { Link } from 'react-router-dom'; */
 import "../Style/ProductList.css";
 
 function Product({ product, deleteProduct }) {
@@ -33,5 +33,5 @@ function Product({ product, deleteProduct }) {
   )
 }
 
-export default Product
+export default Product 
 

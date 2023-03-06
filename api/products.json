@@ -46,20 +46,23 @@
       "id": 5
     },
     {
-      "name": "gorra",
-      "description": "purpur",
-      "category": "",
-      "brand": "",
-      "price": "",
-      "id": 13
+      "name": "sombrero",
+      "description": "Maravilloso sombrero azul, muy llamativo",
+      "category": "Accesorio",
+      "brand": "Mango",
+      "price": "9",
+      "id": 14
     },
     {
-      "name": "sombrero",
-      "description": "",
-      "category": "",
-      "brand": "",
-      "price": "",
-      "id": 14
+      "name": "camiseta",
+      "description": "Verde",
+      "category": "Ropa casual",
+      "brand": "zara",
+      "price": "20",
+      "id": 15
     }
+
+  
+ 
   ]
 }

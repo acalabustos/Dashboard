@@ -1,8 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom"
-import Product from '../components/Product'
 import { Card, Button } from "react-bootstrap";
 
-import DescriptionProduct from "../Pages/DescriptionProduct";
 
 function ProductList() {
   const { products } = useLoaderData();
