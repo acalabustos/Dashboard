@@ -15,7 +15,7 @@ function ProductList() {
             <Card.Title>{product.name}</Card.Title>
             <Card.Text>{product.description}</Card.Text>
 
-            <Button variant="primary" href="/ProductInfo"> More info</Button>
+            <Button variant="primary" href={`/productInfo/${product.id}`}> More info</Button>
             <Button variant="outline-secondary" className="mx-2">Favorite</Button>
           </Card.Body>
         </Card>

@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import { Button } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+
 
 
 
@@ -9,13 +9,13 @@ import { useParams } from 'react-router-dom';
 
 function ProductInfo() {
 
-  const { products } = useLoaderData();
-  const { id } = useParams();
-  console.log("aqui", products);
+  const { product } = useLoaderData();
+ 
+  console.log("aqui", product);
 
   return (
 <>
-     {products.map((product) => (
+
       <Card key={product.id} className="my-3">
         {/*  <Card.Img variant="top" src={product.image} />  */}
         <Card.Body>
@@ -29,7 +29,6 @@ function ProductInfo() {
         <Button variant="primary" href="/productInfo/:id">Delete</Button>
         </Card.Body>
       </Card>
-      ))}
     </>
 );
 
