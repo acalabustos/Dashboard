@@ -7,7 +7,7 @@ import Root from './Router/Root';
 function App() {
    return (
       <div className='App'>
-         <Root/>
+         <Root style={{ background: '#F2CC49' }}></Root>
 
       </div>
    );

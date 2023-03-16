@@ -15,21 +15,21 @@ export const productService = {
 
   },
 
-  async submitProduct(newProduct){
+  async submitProduct(newProduct) {
     console.log("new product de servicio", newProduct);
-      await apiClient.post("/products", newProduct);
-},
+    await apiClient.post("/products", newProduct);
+  },
 
   async getProduct(id) {
-      let response = await apiClient.get("products/" + id);
-      let product = response.data;
-      return product;
+    let response = await apiClient.get("/products/" + id);
+    let product = response.data;
+    return product;
   },
 
-  async deleteProduct(id){
-      await apiClient.delete("products/" + id)
+  async deleteProduct(id) {
+    await apiClient.delete("/products/" + id)
   },
-  async updateProduct(id, updatedProduct){
-      await apiClient.patch("/products/" + id, updatedProduct)
+  async updateProduct(id, updatedProduct) {
+    await apiClient.patch("/products/" + id, updatedProduct)
   }
 }

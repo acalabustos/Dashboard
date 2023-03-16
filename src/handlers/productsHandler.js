@@ -12,8 +12,8 @@ export const productsHandler = {
             "name": newProduct.name,
             "description": newProduct.description,
             "category": newProduct.category,
-            "brand":newProduct.brand,
-            "condition":newProduct.condition,
+            "brand": newProduct.brand,
+            "condition": newProduct.condition,
             "price": newProduct.price,
         }
 console.log("esto es el nuevo prduct", newProductStructure);
@@ -25,7 +25,7 @@ console.log("esto es el nuevo prduct", newProductStructure);
     },
 
     loadProduct(id){
-        return productService.getProducts(id);
+        return productService.getProduct(id);
 
 },
 deleteProduct(id){

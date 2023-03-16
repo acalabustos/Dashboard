@@ -12,14 +12,14 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
-        errorElement: <NotFound />, 
+        errorElement: <NotFound />,
         children: [
             {
                 errorElement: <NotFound />,
                 children: [
                     {
                         index: true,
-                        element: <Home />, 
+                        element: <Home />,
                     },
                     {
                         path: '/CreateProduct',
@@ -29,24 +29,29 @@ export const router = createBrowserRouter([
                         path: "/productInfo/:id",
                         element: <ProductInfo />,
                         loader: fetchProduct
-                        
-                    },    
+
+                    },
                     {
                         path: '/productList',
                         element: <ProductList />,
                         loader: fetchProducts
-                        
-                    }, 
+
+                    },
                     {
                         path: '/DescriptionProduct',
                         element: <DescriptionProduct />,
                     },
-                  
+                    /*    {
+                           path:'/ProductInfo/:id',
+                           element: <ProductInfo/>,
+                           loader: fetchProduct
+                       },
+    */
                 ]
             },
-         
+
         ]
-    },   
+    },
 ]);
 
 async function fetchProducts() {

@@ -6,7 +6,7 @@ import Img3 from '../Img/C.jpg';
 
 function sequenceImg() {
   return (
-   
+
     <Carousel slide={false}>
       <Carousel.Item>
         <img
@@ -30,7 +30,7 @@ function sequenceImg() {
         />
       </Carousel.Item>
     </Carousel>
-   
+
   );
 }
 

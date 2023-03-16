@@ -1,29 +1,37 @@
-/*import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit'; */
 import { Link } from 'react-router-dom';
+import "../Style/ProductList.css";
 
-function Product({ product }) {
+function Product({ product, deleteProduct }) {
+  const textStyle = {
+    fontFamily: 'lobster Two',
+  }
 
-    const { name, description, category, brand, condition, price } = product;
 
-    return (
-        <div className="productCard">
-            <div className="productCard--info">
-                <h1>{name}</h1>
-                <h1>{description}</h1>
-                <h1>{category}</h1>
-                <h1>{brand}</h1>
-                <h1>{condition}</h1>
-                <p>price: {price}$</p>
-            </div>
-            <div className="productCard--buttons">
-                <button>Delete</button>
-                <Link className="edit--link" to={`/editProduct/${product.id}`}>
-                <button>Edit</button>
-                </Link>
-            </div>
-        </div>
-    )
+  const { id, image, name, price } = product;
+
+
+  return (
+
+
+    <Card className="my-3" >
+      <Card.Img variant="top" src={image} />
+      <Card.Body>
+        {<Card.Title id="tittleStyle" >{name}</Card.Title>}
+        <Card.Text >{price}</Card.Text>
+        <Button onClick={() => deleteProduct(id)}>Delete</Button>
+        <Card.Link to={`/editProduct/${product.id}`}>
+          <Button>Edit</Button>
+        </Card.Link>
+        <Card.Link to={`/products/${product.id}`}>
+          <Button id='ButtonStyle'>More Info</Button>
+        </Card.Link>
+
+      </Card.Body>
+    </Card>
+
+
+  )
 }
 
 export default Product
+

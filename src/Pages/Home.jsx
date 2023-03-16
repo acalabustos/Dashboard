@@ -12,12 +12,12 @@ function Home() {
                 <div className="prueba">
                     <Row>
 
-                    <h1>Buy and sell second-hand goods</h1>
-                    
+                        <h1>Buy and sell second-hand goods</h1>
+
                         <Carousel></Carousel>
 
                         <Accordion defaultActiveKey="3">
-                    
+
                         </Accordion>
 
                     </Row>
