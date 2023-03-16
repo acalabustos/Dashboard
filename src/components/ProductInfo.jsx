@@ -4,14 +4,9 @@ import { Button } from 'react-bootstrap';
 
 
 
-
-
-
 function ProductInfo() {
 
   const { product } = useLoaderData();
-
-  console.log("aqui", product);
 
   return (
     <>
@@ -26,7 +21,7 @@ function ProductInfo() {
           <Card.Text>{product.price}€</Card.Text>
           <Button variant="primary" href="/productInfo/:id">Favorite</Button>
           <Button variant="primary" href="/productInfo/:id">Edit</Button>
-          <Button variant="primary" href="/productInfo/:id">Delete</Button>
+          <Button variant="primary" onClick={() => deleteProduct(id)}>Delete</Button>
         </Card.Body>
       </Card>
     </>

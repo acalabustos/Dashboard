@@ -1,5 +1,7 @@
-/* import { Link } from 'react-router-dom'; */
-import "../Style/ProductList.css";
+/* import "../Style/ProductList.css";
+import { productHandler } from "../handlers/productHandler";
+import { Link } from 'react-router-dom';
+
 
 function Product({ product, deleteProduct }) {
   const textStyle = {
@@ -35,3 +37,4 @@ function Product({ product, deleteProduct }) {
 
 export default Product 
 
+ */

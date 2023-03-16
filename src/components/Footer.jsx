@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/FooterStyle.css';
+import '../Style/Footer.css';
 import { Container } from 'react-bootstrap';
 
 function Footer() {
