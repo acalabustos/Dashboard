@@ -1,17 +1,17 @@
 import { useLoaderData } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 import { Button } from 'react-bootstrap';
-
-
-
-
-
+import { productsHandler } from "../handlers/productsHandler";
 
 function ProductInfo() {
 
   const { product } = useLoaderData();
 
-  console.log("aqui", product);
+  async function deleteProduct (id) {
+    await productsHandler.deleteProduct(id)
+
+    console.log (id);
+  }
 
   return (
     <>
@@ -26,7 +26,8 @@ function ProductInfo() {
           <Card.Text>{product.price}€</Card.Text>
           <Button variant="primary" href="/productInfo/:id">Favorite</Button>
           <Button variant="primary" href="/productInfo/:id">Edit</Button>
-          <Button variant="primary" href="/productInfo/:id">Delete</Button>
+          <Button variant="primary" onClick={() => deleteProduct(product.id)} >Delete</Button>
+          
         </Card.Body>
       </Card>
     </>

@@ -1,25 +1,6 @@
 {
   "products": [
     {
-      "name": "Camiseta Deportiva",
-      "description":"",
-      "category": "Camiseta",
-      "brand": "Nike",
-      "condition": "Buena",
-      "price": "10",
-      "id": 1
-    },
-    {
-      "id": 12,
-      "img": "https://cdn-icons-png.flaticon.com/512/1400/1400329.png",
-      "name": "Botas",
-      "description": "Marrones de talla alta",
-      "category": "Zapatos",
-      "brand": "El corte ingles",
-      "condicition": "New",
-      "price": "8"
-    },
-    {
       "name": "Top",
       "description": "Color rojo de tirantas",
       "category": "Camiseta",
@@ -46,7 +27,5 @@
       "price": "30",
       "id": 5
     }
-   
-   
   ]
 }

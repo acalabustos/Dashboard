@@ -11,7 +11,7 @@ function Root() {
                 {navigation.state === "loading" && (
                     <div className="alert alert-info my-S">Loading...</div>
                 )}
-                <Outlet />
+             <Outlet />
             </main>
             <Footer />
         </>
