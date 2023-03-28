@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 const NotFound = () => {
     const error = useRouteError()
-    console.log(error);
+    
 
     return (
         <Alert variant="danger" className="text-center">
